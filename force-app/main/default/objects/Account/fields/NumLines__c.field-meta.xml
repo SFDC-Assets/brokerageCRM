@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumLines__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText># of lines of different commercial coverage this customer has purchased.  The goal is to grow the # of lines -- more lines, the higher retention rate.  Also a measure of whitespace opportunity</inlineHelpText>
+    <label># of Lines</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

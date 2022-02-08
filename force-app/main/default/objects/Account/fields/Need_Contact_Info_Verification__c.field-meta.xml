@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Need_Contact_Info_Verification__c</fullName>
+    <externalId>false</externalId>
+    <formula>Contact_Information_Validated__c &lt; (TODAY() - 180)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Need Contact Info Verification</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

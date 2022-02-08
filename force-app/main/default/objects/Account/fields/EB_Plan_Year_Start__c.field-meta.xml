@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EB_Plan_Year_Start__c</fullName>
+    <externalId>false</externalId>
+    <label>EB Plan Year Start</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>January 1</fullName>
+                <default>false</default>
+                <label>January 1</label>
+            </value>
+            <value>
+                <fullName>February 1</fullName>
+                <default>false</default>
+                <label>February 1</label>
+            </value>
+            <value>
+                <fullName>March 1</fullName>
+                <default>false</default>
+                <label>March 1</label>
+            </value>
+            <value>
+                <fullName>April 1</fullName>
+                <default>false</default>
+                <label>April 1</label>
+            </value>
+            <value>
+                <fullName>May !</fullName>
+                <default>false</default>
+                <label>May !</label>
+            </value>
+            <value>
+                <fullName>June !</fullName>
+                <default>false</default>
+                <label>June !</label>
+            </value>
+            <value>
+                <fullName>July 1</fullName>
+                <default>false</default>
+                <label>July 1</label>
+            </value>
+            <value>
+                <fullName>August 1</fullName>
+                <default>false</default>
+                <label>August 1</label>
+            </value>
+            <value>
+                <fullName>September 1</fullName>
+                <default>false</default>
+                <label>September 1</label>
+            </value>
+            <value>
+                <fullName>October 1</fullName>
+                <default>false</default>
+                <label>October 1</label>
+            </value>
+            <value>
+                <fullName>November 1</fullName>
+                <default>false</default>
+                <label>November 1</label>
+            </value>
+            <value>
+                <fullName>December 1</fullName>
+                <default>false</default>
+                <label>December 1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

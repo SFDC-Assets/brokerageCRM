@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Agencies_Brokers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>INS_National_Rank__c</columns>
+    <columns>Production_Segment__c</columns>
+    <columns>Policy_Loss_Ratio__c</columns>
+    <columns>YTD_Bind_Ratio__c</columns>
+    <columns>Total_Submissions__c</columns>
+    <columns>Total_Bound_Policies__c</columns>
+    <columns>Total_DWP__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>FINS_Insurance_Planned_P_C_Growth__c</columns>
+    <columns>FinServ__TotalPremium__c</columns>
+    <columns>JH_Temp_Total_Production__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.FINS_INS_Agency_Broker</value>
+    </filters>
+    <label>FINS - All Agencies/Brokers</label>
+</ListView>

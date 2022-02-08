@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins_fsc__PremiumPaymentType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>DEPRECATED. Please use PremiumPaymentType.</description>
+    <externalId>false</externalId>
+    <label>Premium Payment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advance</fullName>
+                <default>true</default>
+                <label>Advance</label>
+            </value>
+            <value>
+                <fullName>Arrears</fullName>
+                <default>false</default>
+                <label>Arrears</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

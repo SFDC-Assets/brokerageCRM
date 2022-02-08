@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Utilities</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>CPQ Utilities</masterLabel>
+    <openType>replace</openType>
+    <page>CPQUtilities</page>
+    <protected>false</protected>
+</WebLink>

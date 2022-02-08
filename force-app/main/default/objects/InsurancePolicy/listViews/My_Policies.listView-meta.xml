@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Policies</fullName>
+    <columns>Name</columns>
+    <columns>NameInsured</columns>
+    <columns>PolicyType</columns>
+    <columns>SaleDate</columns>
+    <columns>ExpirationDate</columns>
+    <columns>PremiumAmount</columns>
+    <columns>RenewalDate</columns>
+    <columns>Producer</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NameInsured</field>
+        <operation>equals</operation>
+        <value>Rachel Adams</value>
+    </filters>
+    <label>My Policies</label>
+</ListView>

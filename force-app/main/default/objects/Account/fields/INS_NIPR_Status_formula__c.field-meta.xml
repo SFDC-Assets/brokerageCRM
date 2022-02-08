@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INS_NIPR_Status_formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(TEXT(INS_NIPR_Status__c), &apos;Success&apos;), IMAGE(&quot;/resource/1566270322000/greencheckmark?&quot;, &quot;&quot;, 15, 15),
+IMAGE(&quot;/resource/1548983777000/warningIcon?&quot;, &quot;&quot;, 15, 15))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NIPR Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

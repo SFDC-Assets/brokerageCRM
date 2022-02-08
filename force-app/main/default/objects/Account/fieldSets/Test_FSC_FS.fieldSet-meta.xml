@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_FSC_FS</fullName>
+    <description>For Testing Person Accounts</description>
+    <displayedFields>
+        <field>FinServ__CountryOfResidence__pc</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Test FSC FS</label>
+</FieldSet>

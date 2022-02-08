@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IA_Renewal_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Renewal Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing Decision</fullName>
+                <default>false</default>
+                <label>Marketing Decision</label>
+            </value>
+            <value>
+                <fullName>Received Exposure Info</fullName>
+                <default>false</default>
+                <label>Received Exposure Info</label>
+            </value>
+            <value>
+                <fullName>Submission Made to Carriers</fullName>
+                <default>false</default>
+                <label>Submission Made to Carriers</label>
+            </value>
+            <value>
+                <fullName>Proposal Finalized</fullName>
+                <default>false</default>
+                <label>Proposal Finalized</label>
+            </value>
+            <value>
+                <fullName>Bound</fullName>
+                <default>false</default>
+                <label>Bound</label>
+            </value>
+            <value>
+                <fullName>Renewed</fullName>
+                <default>false</default>
+                <label>Renewed</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>Non-Renewed</fullName>
+                <default>false</default>
+                <label>Non-Renewed</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Insurance_Compact_Layout</fullName>
+    <fields>ParentId</fields>
+    <fields>Tier__c</fields>
+    <fields>Segment__c</fields>
+    <fields>Rating</fields>
+    <label>Company Insurance Compact Layout</label>
+</CompactLayout>

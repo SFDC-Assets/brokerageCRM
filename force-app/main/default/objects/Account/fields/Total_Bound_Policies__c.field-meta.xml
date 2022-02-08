@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Bound_Policies__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Quotes that are accepted by the customer (insured) become bound policies and insurance contracts.</inlineHelpText>
+    <label>YTD Bound Policies</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
