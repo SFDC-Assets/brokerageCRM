@@ -1,0 +1,1 @@
+sfdx automig:dump -u michellelewis@michellelewis-20210819.demo -d ./data --objects vlocity_ins_fsc__InsurancePolicyCommission__c,Insurance_Policy_Contributions__c,Insurance_Policy_Rates__c,IA_Coverage_Attributes__c,Brokerage_Split__c
