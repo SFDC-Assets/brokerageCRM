@@ -143,24 +143,23 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Commissions from Carrier Direct Bill Statements</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <label>Direct Bill Commission</label>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Plan Year Placement</label>
     <nameField>
-        <label>Direct Bill Commission Name</label>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <displayFormat>{YYYY}-{0}</displayFormat>
+        <label>Plan Year Placement</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Direct Bill Commissions</pluralLabel>
+    <pluralLabel>Plan Year Placements</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

@@ -1,18 +1,32 @@
-# Salesforce DX Project: Next Steps
+# omnistudio-basic-scratchorg
+Basic Omnistudio scratch org license and installing the Omnistudio 238 package.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Getting Started
+This will provision a scratch org with:
+* OmniStudio V238.1 Managed Package Installed
+* Configure required remote site settings
 
-## How Do You Plan to Deploy Your Changes?
+# Running
+* Run
+    ```
+    ./orginit.sh
+    ```
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
+# Manual Steps
+* Go to Setup-> Lightning App Builder
+    * Click on View for Vlocity Card Designer
+        * Click on Activation and make it the org default for the OmniUiCard object
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+# Before you create any new OmniStudio Object (e.g. OmniScripts, Integration Procedures, DataRaptors, FlexCards)
+* Go to Setup-> OmniStudio Settings
+    * Click on Enable OmniStudio Metadata API Support.
+        * Click on Enable. This will allow you to use SFDX to retrieve and deploy the Omnistudio Objects via metadata.
+          ```
+          sfdx force:source:retrieve -m OmniUiCard,OmniDataTransform,OmniIntegrationProcedure,OmniScript
+          ```
 
-## Read All About It
+          ```
+          sfdx force:source:deploy -m OmniUiCard,OmniDataTransform,OmniIntegrationProcedure,OmniScript
+          ```
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)

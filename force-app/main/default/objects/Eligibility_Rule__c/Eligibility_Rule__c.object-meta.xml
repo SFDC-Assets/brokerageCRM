@@ -143,25 +143,25 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Commissions from Carrier Direct Bill Statements</description>
+    <description>A set of rules for an employer group that determines when new employees are eligible for benefits.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <label>Direct Bill Commission</label>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Eligibility Rule</label>
     <nameField>
-        <label>Direct Bill Commission Name</label>
-        <trackHistory>false</trackHistory>
+        <label>Eligibility Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Direct Bill Commissions</pluralLabel>
+    <pluralLabel>Eligibility Rules</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>

@@ -143,7 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Commissions from Carrier Direct Bill Statements</description>
+    <description>Line item commission calculation per split</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -153,15 +153,16 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <label>Direct Bill Commission</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Calculated Commission</label>
     <nameField>
-        <label>Direct Bill Commission Name</label>
+        <displayFormat>A-{0000}</displayFormat>
+        <label>Calculated Commission Name</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Direct Bill Commissions</pluralLabel>
+    <pluralLabel>Calculated Commissions</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

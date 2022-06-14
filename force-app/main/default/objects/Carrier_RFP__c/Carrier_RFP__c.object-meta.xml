@@ -143,25 +143,24 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Commissions from Carrier Direct Bill Statements</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <label>Direct Bill Commission</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Carrier RFP</label>
     <nameField>
-        <label>Direct Bill Commission Name</label>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <displayFormat>{YYYY}{MM}-{0}</displayFormat>
+        <label>RFP Name</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Direct Bill Commissions</pluralLabel>
+    <pluralLabel>Carrier RFPs</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
