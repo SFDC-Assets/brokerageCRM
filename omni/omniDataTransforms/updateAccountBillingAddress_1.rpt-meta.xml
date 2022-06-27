@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Update the Billing address of an Account Input Value: Id, BillingAddress, BillingStreet, BillingPostalCode, BillingState, BillingCountry, BillingCity</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+    &quot;Policies&quot;: [
+        {
+            &quot;PolicyType&quot;: &quot;Specialty&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005jTIGAY&quot;,
+            &quot;PolicyName&quot;: &quot;Acc79856&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        },
+        {
+            &quot;PolicyType&quot;: &quot;Home&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005bK7GAI&quot;,
+            &quot;PolicyName&quot;: &quot;PN-HOME-440957&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        },
+        {
+            &quot;PolicyType&quot;: &quot;Property&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005babGAA&quot;,
+            &quot;PolicyName&quot;: &quot;Homeowners (HO3) - 2021-7-27-7-5-0&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        },
+        {
+            &quot;PolicyType&quot;: &quot;Auto&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005badGAA&quot;,
+            &quot;PolicyName&quot;: &quot;Rachel Adams - Multi Auto (Eff. 2021-08-01) 628154544&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        },
+        {
+            &quot;PolicyType&quot;: &quot;Life&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005baOGAQ&quot;,
+            &quot;PolicyName&quot;: &quot;WL75130&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        },
+        {
+            &quot;PolicyType&quot;: &quot;Auto&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005baAGAQ&quot;,
+            &quot;PolicyName&quot;: &quot;PN-ZEUM5I&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        },
+        {
+            &quot;PolicyType&quot;: &quot;Auto&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5e0000005baVGAQ&quot;,
+            &quot;PolicyName&quot;: &quot;PN-GZ5120A&quot;,
+            &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+            &quot;AddressState&quot;: &quot;NY&quot;,
+            &quot;AddressCity&quot;: &quot;New York&quot;,
+            &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        }
+    ],
+    &quot;Your_ColumnNames&quot;: [
+        {
+            &quot;fieldName&quot;: &quot;PolicyName&quot;,
+            &quot;label&quot;: &quot;Policy Number&quot;
+        },
+        {
+            &quot;fieldName&quot;: &quot;PolicyType&quot;,
+            &quot;label&quot;: &quot;Policy Type&quot;
+        },
+        {
+            &quot;fieldName&quot;: &quot;AddressStreet&quot;,
+            &quot;label&quot;: &quot;Street&quot;
+        },
+        {
+            &quot;fieldName&quot;: &quot;AddressCity&quot;,
+            &quot;label&quot;: &quot;City&quot;
+        },
+        {
+            &quot;fieldName&quot;: &quot;AddressState&quot;,
+            &quot;label&quot;: &quot;State&quot;
+        },
+        {
+            &quot;fieldName&quot;: &quot;AddressPostalCode&quot;,
+            &quot;label&quot;: &quot;Zip&quot;
+        }
+    ],
+    &quot;Id&quot;: &quot;0016A000003MHLe&quot;,
+    &quot;ContextId&quot;: &quot;0015e00000HBlH1AAL&quot;,
+    &quot;timeStamp&quot;: &quot;2021-09-03T14:08:36.363Z&quot;,
+    &quot;userProfile&quot;: &quot;*FINS - Internal - Admin&quot;,
+    &quot;userTimeZone&quot;: &quot;-240&quot;,
+    &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+    &quot;userName&quot;: &quot;corey.carpenter@sfiseorg3.demo&quot;,
+    &quot;userId&quot;: &quot;0055e000006WasxAAC&quot;,
+    &quot;case&quot;: {},
+    &quot;AccountList&quot;: [
+        {
+            &quot;RecordTypeId&quot;: &quot;0125e000001qMeJAAU&quot;,
+            &quot;Id&quot;: &quot;0015e00000HXKotAAH&quot;,
+            &quot;Name&quot;: &quot;Doug Richert Body Shop&quot;
+        },
+        {
+            &quot;RecordTypeId&quot;: &quot;0125e000001qMdBAAU&quot;,
+            &quot;Id&quot;: &quot;0015e00000KvaNcAAJ&quot;,
+            &quot;Name&quot;: &quot;Will  Baker&quot;
+        },
+        {
+            &quot;RecordTypeId&quot;: &quot;0125e000001qMcxAAE&quot;,
+            &quot;Id&quot;: &quot;0015e00000HBlHVAA1&quot;,
+            &quot;Name&quot;: &quot;Universal Containers&quot;
+        },
+        {
+            &quot;RecordTypeId&quot;: &quot;0125e000001qMcxAAE&quot;,
+            &quot;Id&quot;: &quot;0015e00000HBlHWAA1&quot;,
+            &quot;Name&quot;: &quot;Global Insurance&quot;
+        },
+        {
+            &quot;RecordTypeId&quot;: &quot;0125e000001qMcxAAE&quot;,
+            &quot;Id&quot;: &quot;0015e00000HBlHXAA1&quot;,
+            &quot;Name&quot;: &quot;Opportunity Resources Inc&quot;
+        }
+    ],
+    &quot;Addresses&quot;: {
+        &quot;NewAddress-Block&quot;: {
+            &quot;SetSubject&quot;: null,
+            &quot;SetType&quot;: null,
+            &quot;SetStatus&quot;: null,
+            &quot;SetReason&quot;: null,
+            &quot;NewAddress&quot;: &quot;500 Madison Ave, New York, NY 10022, USA&quot;,
+            &quot;PostalCode&quot;: &quot;10022&quot;,
+            &quot;Country&quot;: &quot;United States&quot;,
+            &quot;State&quot;: &quot;NY&quot;,
+            &quot;City&quot;: &quot;New York&quot;,
+            &quot;Street&quot;: &quot;500 Madison Avenue&quot;
+        },
+        &quot;IsPolicyAddressSelected&quot;: 0,
+        &quot;RecordsDisplayed&quot;: [
+            {
+                &quot;selectedDataNode&quot;: {
+                    &quot;PolicyType&quot;: &quot;Specialty&quot;,
+                    &quot;PolicyId&quot;: &quot;0YT5e0000005jTIGAY&quot;,
+                    &quot;PolicyName&quot;: &quot;Acc79856&quot;,
+                    &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+                    &quot;AddressState&quot;: &quot;NY&quot;,
+                    &quot;AddressCity&quot;: &quot;New York&quot;,
+                    &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+                }
+            },
+            {
+                &quot;selectedDataNode&quot;: {
+                    &quot;PolicyType&quot;: &quot;Home&quot;,
+                    &quot;PolicyId&quot;: &quot;0YT5e0000005bK7GAI&quot;,
+                    &quot;PolicyName&quot;: &quot;PN-HOME-440957&quot;,
+                    &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+                    &quot;AddressState&quot;: &quot;NY&quot;,
+                    &quot;AddressCity&quot;: &quot;New York&quot;,
+                    &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+                }
+            },
+            {
+                &quot;selectedDataNode&quot;: {
+                    &quot;PolicyType&quot;: &quot;Property&quot;,
+                    &quot;PolicyId&quot;: &quot;0YT5e0000005babGAA&quot;,
+                    &quot;PolicyName&quot;: &quot;Homeowners (HO3) - 2021-7-27-7-5-0&quot;,
+                    &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+                    &quot;AddressState&quot;: &quot;NY&quot;,
+                    &quot;AddressCity&quot;: &quot;New York&quot;,
+                    &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+                }
+            }
+        ]
+    }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>updateAccountBillingAddress</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e5863709-5539-4630-b00f-308a0e977b84</globalKey>
+        <inputFieldName>Addresses:NewAddress-Block:PostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>a51539b3-713f-4d00-b6dd-a7169d117d02</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f7e166b5-5812-4f03-8fa6-2b9f876c18cd</globalKey>
+        <inputFieldName>Addresses:NewAddress-Block:Country</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountry</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>13ec6b6a-41ae-4733-9328-6ef015a8f7ee</globalKey>
+        <inputFieldName>Addresses:NewAddress-Block::Street</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>10ec524c-f6d4-427e-bcca-f5fe98e4cb20</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>75d6e65a-4944-4a4c-9178-45b1925ab0a0</globalKey>
+        <inputFieldName>Addresses:NewAddress-Block:City</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>13cdf53d-e051-484a-a3ee-2ce928b532cf</globalKey>
+        <inputFieldName>Addresses:NewAddress-Block:State</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingState</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>bedd500c-d4d2-4ea6-a2ff-fad13fb2314a</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>updateAccountBillingAddress</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;Policies&quot;: [
+    {
+      &quot;PolicyType&quot;: &quot;Specialty&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005jTIGAY&quot;,
+      &quot;PolicyName&quot;: &quot;Acc79856&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    },
+    {
+      &quot;PolicyType&quot;: &quot;Home&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005bK7GAI&quot;,
+      &quot;PolicyName&quot;: &quot;PN-HOME-440957&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    },
+    {
+      &quot;PolicyType&quot;: &quot;Property&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005babGAA&quot;,
+      &quot;PolicyName&quot;: &quot;Homeowners (HO3) - 2021-7-27-7-5-0&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    },
+    {
+      &quot;PolicyType&quot;: &quot;Auto&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005badGAA&quot;,
+      &quot;PolicyName&quot;: &quot;Rachel Adams - Multi Auto (Eff. 2021-08-01) 628154544&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    },
+    {
+      &quot;PolicyType&quot;: &quot;Life&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005baOGAQ&quot;,
+      &quot;PolicyName&quot;: &quot;WL75130&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    },
+    {
+      &quot;PolicyType&quot;: &quot;Auto&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005baAGAQ&quot;,
+      &quot;PolicyName&quot;: &quot;PN-ZEUM5I&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    },
+    {
+      &quot;PolicyType&quot;: &quot;Auto&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5e0000005baVGAQ&quot;,
+      &quot;PolicyName&quot;: &quot;PN-GZ5120A&quot;,
+      &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+      &quot;AddressState&quot;: &quot;NY&quot;,
+      &quot;AddressCity&quot;: &quot;New York&quot;,
+      &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+    }
+  ],
+  &quot;Your_ColumnNames&quot;: [
+    {
+      &quot;fieldName&quot;: &quot;PolicyName&quot;,
+      &quot;label&quot;: &quot;Policy Number&quot;
+    },
+    {
+      &quot;fieldName&quot;: &quot;PolicyType&quot;,
+      &quot;label&quot;: &quot;Policy Type&quot;
+    },
+    {
+      &quot;fieldName&quot;: &quot;AddressStreet&quot;,
+      &quot;label&quot;: &quot;Street&quot;
+    },
+    {
+      &quot;fieldName&quot;: &quot;AddressCity&quot;,
+      &quot;label&quot;: &quot;City&quot;
+    },
+    {
+      &quot;fieldName&quot;: &quot;AddressState&quot;,
+      &quot;label&quot;: &quot;State&quot;
+    },
+    {
+      &quot;fieldName&quot;: &quot;AddressPostalCode&quot;,
+      &quot;label&quot;: &quot;Zip&quot;
+    }
+  ],
+  &quot;Id&quot;: &quot;0016A000003MHLe&quot;,
+  &quot;ContextId&quot;: &quot;0015e00000HBlH1AAL&quot;,
+  &quot;timeStamp&quot;: &quot;2021-09-03T14:08:36.363Z&quot;,
+  &quot;userProfile&quot;: &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZone&quot;: &quot;-240&quot;,
+  &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+  &quot;userName&quot;: &quot;corey.carpenter@sfiseorg3.demo&quot;,
+  &quot;userId&quot;: &quot;0055e000006WasxAAC&quot;,
+  &quot;case&quot;: {},
+  &quot;AccountList&quot;: [
+    {
+      &quot;RecordTypeId&quot;: &quot;0125e000001qMeJAAU&quot;,
+      &quot;Id&quot;: &quot;0015e00000HXKotAAH&quot;,
+      &quot;Name&quot;: &quot;Doug Richert Body Shop&quot;
+    },
+    {
+      &quot;RecordTypeId&quot;: &quot;0125e000001qMdBAAU&quot;,
+      &quot;Id&quot;: &quot;0015e00000KvaNcAAJ&quot;,
+      &quot;Name&quot;: &quot;Will  Baker&quot;
+    },
+    {
+      &quot;RecordTypeId&quot;: &quot;0125e000001qMcxAAE&quot;,
+      &quot;Id&quot;: &quot;0015e00000HBlHVAA1&quot;,
+      &quot;Name&quot;: &quot;Universal Containers&quot;
+    },
+    {
+      &quot;RecordTypeId&quot;: &quot;0125e000001qMcxAAE&quot;,
+      &quot;Id&quot;: &quot;0015e00000HBlHWAA1&quot;,
+      &quot;Name&quot;: &quot;Global Insurance&quot;
+    },
+    {
+      &quot;RecordTypeId&quot;: &quot;0125e000001qMcxAAE&quot;,
+      &quot;Id&quot;: &quot;0015e00000HBlHXAA1&quot;,
+      &quot;Name&quot;: &quot;Opportunity Resources Inc&quot;
+    }
+  ],
+  &quot;Addresses&quot;: {
+    &quot;NewAddress-Block&quot;: {
+      &quot;SetSubject&quot;: null,
+      &quot;SetType&quot;: null,
+      &quot;SetStatus&quot;: null,
+      &quot;SetReason&quot;: null,
+      &quot;NewAddress&quot;: &quot;500 Madison Ave, New York, NY 10022, USA&quot;,
+      &quot;PostalCode&quot;: &quot;10022&quot;,
+      &quot;Country&quot;: &quot;United States&quot;,
+      &quot;State&quot;: &quot;NY&quot;,
+      &quot;City&quot;: &quot;New York&quot;,
+      &quot;Street&quot;: &quot;500 Madison Avenue&quot;
+    },
+    &quot;IsPolicyAddressSelected&quot;: 0,
+    &quot;RecordsDisplayed&quot;: [
+      {
+        &quot;selectedDataNode&quot;: {
+          &quot;PolicyType&quot;: &quot;Specialty&quot;,
+          &quot;PolicyId&quot;: &quot;0YT5e0000005jTIGAY&quot;,
+          &quot;PolicyName&quot;: &quot;Acc79856&quot;,
+          &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+          &quot;AddressState&quot;: &quot;NY&quot;,
+          &quot;AddressCity&quot;: &quot;New York&quot;,
+          &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        }
+      },
+      {
+        &quot;selectedDataNode&quot;: {
+          &quot;PolicyType&quot;: &quot;Home&quot;,
+          &quot;PolicyId&quot;: &quot;0YT5e0000005bK7GAI&quot;,
+          &quot;PolicyName&quot;: &quot;PN-HOME-440957&quot;,
+          &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+          &quot;AddressState&quot;: &quot;NY&quot;,
+          &quot;AddressCity&quot;: &quot;New York&quot;,
+          &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        }
+      },
+      {
+        &quot;selectedDataNode&quot;: {
+          &quot;PolicyType&quot;: &quot;Property&quot;,
+          &quot;PolicyId&quot;: &quot;0YT5e0000005babGAA&quot;,
+          &quot;PolicyName&quot;: &quot;Homeowners (HO3) - 2021-7-27-7-5-0&quot;,
+          &quot;AddressPostalCode&quot;: &quot;10006&quot;,
+          &quot;AddressState&quot;: &quot;NY&quot;,
+          &quot;AddressCity&quot;: &quot;New York&quot;,
+          &quot;AddressStreet&quot;: &quot;250 Greenwich Street&quot;
+        }
+      }
+    ]
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>updateAccountBillingAddress_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

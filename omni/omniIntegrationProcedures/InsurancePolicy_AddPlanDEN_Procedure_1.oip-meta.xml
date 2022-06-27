@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;policyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+    &quot;InsurancePolicy&quot;: {
+        &quot;IA_Billing_Type__c&quot;: &quot;Direct&quot;,
+        &quot;HasAnyAutoCoverage&quot;: false,
+        &quot;Continuous__c&quot;: false,
+        &quot;Group__c&quot;: &quot;Small Group&quot;,
+        &quot;Department__c&quot;: &quot;Employee Benefits&quot;,
+        &quot;IA_Service_Lead__c&quot;: &quot;0055f000000IBlHAAW&quot;,
+        &quot;IA_Commission_Percentage__c&quot;: 3,
+        &quot;Metal_Level__c&quot;: &quot;Silver&quot;,
+        &quot;Funding__c&quot;: &quot;Fully Insured&quot;,
+        &quot;Line_of_Coverage__c&quot;: &quot;Medical&quot;,
+        &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+        &quot;omnistudio_fsc__PremiumPaymentType__c&quot;: &quot;Advance&quot;,
+        &quot;PolicyName&quot;: &quot;Group Medical-CLONE&quot;,
+        &quot;Name&quot;: &quot;Group Medical-CLONE&quot;,
+        &quot;omnistudio_fsc__PremiumCalculationMethod__c&quot;: &quot;Daily&quot;,
+        &quot;NameInsuredId&quot;: &quot;0015f000003bUlEAAU&quot;,
+        &quot;PlanType&quot;: &quot;Medical HDHP&quot;,
+        &quot;Substatus&quot;: &quot;Draft&quot;,
+        &quot;SourceOpportunityId&quot;: &quot;0065f00000BXh22AAD&quot;,
+        &quot;IsRenewedPolicy&quot;: true,
+        &quot;OwnerId&quot;: &quot;0055f000000IBlHAAW&quot;,
+        &quot;omnistudio_fsc__MonthlyPremium__c&quot;: 76295,
+        &quot;IsLoanEligibile&quot;: false,
+        &quot;IA_Billing_Company__c&quot;: &quot;0015f000005EFVhAAO&quot;,
+        &quot;IA_Carrier__c&quot;: &quot;0015f000005EFVhAAO&quot;,
+        &quot;BOR__c&quot;: &quot;2022-04-01&quot;
+    },
+    &quot;BrokerageSplit&quot;: [
+        {
+            &quot;fEffectiveDate&quot;: &quot;Effective: 2023-09-01,2022-12-02,2022-05-28&quot;,
+            &quot;fEndDate&quot;: &quot;End: 2023-12-02,2023-11-30,2023-05-31&quot;,
+            &quot;Split_End_Date__c&quot;: &quot;2023-12-02&quot;,
+            &quot;Split_Effective_Date__c&quot;: &quot;2023-09-01&quot;,
+            &quot;OwnerId&quot;: &quot;0055f000000IBlHAAW&quot;,
+            &quot;New_Business_Split__c&quot;: true,
+            &quot;Name&quot;: &quot;Standard First Year Split&quot;
+        },
+        {
+            &quot;fEffectiveDate&quot;: &quot;Effective: 2023-09-01,2022-12-02,2022-05-28&quot;,
+            &quot;fEndDate&quot;: &quot;End: 2023-12-02,2023-11-30,2023-05-31&quot;,
+            &quot;Split_End_Date__c&quot;: &quot;2023-11-30&quot;,
+            &quot;Split_Effective_Date__c&quot;: &quot;2022-12-02&quot;,
+            &quot;OwnerId&quot;: &quot;0055f000000IBlHAAW&quot;,
+            &quot;New_Business_Split__c&quot;: false,
+            &quot;Name&quot;: &quot;2nd Year Split&quot;
+        },
+        {
+            &quot;fEffectiveDate&quot;: &quot;Effective: 2023-09-01,2022-12-02,2022-05-28&quot;,
+            &quot;fEndDate&quot;: &quot;End: 2023-12-02,2023-11-30,2023-05-31&quot;,
+            &quot;Split_End_Date__c&quot;: &quot;2023-05-31&quot;,
+            &quot;Split_Effective_Date__c&quot;: &quot;2022-05-28&quot;,
+            &quot;OwnerId&quot;: null,
+            &quot;New_Business_Split__c&quot;: null,
+            &quot;Name&quot;: &quot;Yet Another Split&quot;
+        }
+    ],
+    &quot;effectiveDate&quot;: &quot;2022-05-18&quot;,
+    &quot;renewalEnd&quot;: &quot;2023-05-17&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>CloneInsurancePolicy</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drCreateNewPolicy</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;useFormulas&quot;:true,&quot;additionalInput&quot;:{&quot;InsurancePolicy&quot;:&quot;%InsurancePolicy%&quot;,&quot;newEffectiveDate&quot;:&quot;%effectiveDate%&quot;,&quot;nextRenewalDate&quot;:&quot;%renewalEnd%&quot;,&quot;BrokerageSplit&quot;:&quot;%BrokerageSplit%&quot;,&quot;inboundNameInsuredId&quot;:&quot;=IF(%inboundNameInsuredId%, %inboundNameInsuredId%, null)&quot;},&quot;additionalOutput&quot;:{},&quot;failureResponse&quot;:{},&quot;sendOnlyAdditionalInput&quot;:true,&quot;returnOnlyAdditionalOutput&quot;:false,&quot;returnOnlyFailureResponse&quot;:false,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;bundle&quot;:&quot;createPolicyAndSplits&quot;,&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;show&quot;:null,&quot;label&quot;:&quot;DataRaptorPostAction4&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>drExtractPolicyCoverageData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;useFormulas&quot;:true,&quot;additionalInput&quot;:{},&quot;additionalOutput&quot;:{},&quot;failureResponse&quot;:{},&quot;sendOnlyAdditionalInput&quot;:false,&quot;returnOnlyAdditionalOutput&quot;:false,&quot;returnOnlyFailureResponse&quot;:false,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;bundle&quot;:&quot;extractPolicyCoveragesAndRelatedObjects&quot;,&quot;dataRaptor Input Parameters&quot;:[{&quot;inputParam&quot;:&quot;policyId&quot;,&quot;element&quot;:&quot;policyId&quot;}],&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;ignoreCache&quot;:true,&quot;show&quot;:null,&quot;label&quot;:&quot;DataRaptorExtractAction1&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ipCreateCoveragesEtcAsynch</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;useFormulas&quot;:true,&quot;additionalInput&quot;:{&quot;newPolicyId&quot;:&quot;%drCreateNewPolicy:InsurancePolicy_1:Id%&quot;,&quot;effectiveDate&quot;:&quot;%effectiveDate%&quot;,&quot;policyCoverageData&quot;:&quot;%drExtractPolicyCoverageData%&quot;},&quot;additionalOutput&quot;:{},&quot;failureResponse&quot;:{},&quot;sendOnlyAdditionalInput&quot;:true,&quot;returnOnlyAdditionalOutput&quot;:false,&quot;returnOnlyFailureResponse&quot;:false,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;integrationProcedureKey&quot;:&quot;createPolicyCoverageAndRelatedObjects_CalledAsynchronously&quot;,&quot;remoteOptions&quot;:{&quot;useFuture&quot;:true},&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;disableChainable&quot;:false,&quot;show&quot;:null,&quot;label&quot;:&quot;IntegrationProcedureAction1&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;useFormulas&quot;:true,&quot;additionalOutput&quot;:{&quot;newPolicyId&quot;:&quot;%drCreateNewPolicy:InsurancePolicy_1:Id%&quot;},&quot;returnOnlyAdditionalOutput&quot;:true,&quot;returnFullDataJSON&quot;:false,&quot;responseFormat&quot;:&quot;JSON&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseDefaultData&quot;:{},&quot;vlcResponseHeaders&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ResponseAction2&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>InsurancePolicy_AddPlanDEN</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{&quot;linkToExternalObject&quot;:&quot;&quot;,&quot;trackingCustomData&quot;:{},&quot;includeAllActionsInResponse&quot;:false,&quot;columnsPropertyMap&quot;:[],&quot;relationshipFieldsMap&quot;:[],&quot;labelSingular&quot;:&quot;&quot;,&quot;labelPlural&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;nameColumn&quot;:&quot;&quot;,&quot;rollbackOnError&quot;:false,&quot;chainableQueriesLimit&quot;:50,&quot;chainableDMLStatementsLimit&quot;:null,&quot;chainableCpuLimit&quot;:2000,&quot;chainableHeapSizeLimit&quot;:null,&quot;chainableDMLRowsLimit&quot;:null,&quot;chainableQueryRowsLimit&quot;:null,&quot;chainableSoslQueriesLimit&quot;:null,&quot;chainableActualTimeLimit&quot;:null,&quot;additionalChainableResponse&quot;:{},&quot;queueableChainableQueriesLimit&quot;:120,&quot;queueableChainableCpuLimit&quot;:40000,&quot;queueableChainableHeapSizeLimit&quot;:6,&quot;ttlMinutes&quot;:5,&quot;mockResponseMap&quot;:{}}</propertySetConfig>
+    <subType>AddPlanDEN</subType>
+    <type>InsurancePolicy</type>
+    <uniqueName>InsurancePolicy_AddPlanDEN_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>69b61800-d1f4-58af-401d-a16305dfda93</webComponentKey>
+</OmniIntegrationProcedure>

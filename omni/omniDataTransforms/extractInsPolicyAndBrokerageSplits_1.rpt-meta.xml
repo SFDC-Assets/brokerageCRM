@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+    &quot;CategoryCode&quot;: null,
+    &quot;LimitRange&quot;: null,
+    &quot;LimitAmount&quot;: null,
+    &quot;LimitDate&quot;: null,
+    &quot;LimitPercentage&quot;: null,
+    &quot;ICPremiumAmount&quot;: 0,
+    &quot;DeductibleAmount&quot;: null,
+    &quot;Category&quot;: null,
+    &quot;CategoryGroup&quot;: null,
+    &quot;CategoryGroupType&quot;: null,
+    &quot;ICDiscount&quot;: null,
+    &quot;BenefitPaymentFrequency&quot;: null,
+    &quot;ICEffectiveDate&quot;: &quot;2021-09-07T14:00:00.000+0000&quot;,
+    &quot;ICExpirationDate&quot;: &quot;2022-09-07T13:59:59.000+0000&quot;,
+    &quot;IncomeOptionType&quot;: null,
+    &quot;DeathBenefitOptionType&quot;: null,
+    &quot;InsurancePolicyAssetId&quot;: &quot;0YW5e0000004q7KGAQ&quot;,
+    &quot;ICSourceSystemIdentifier&quot;: null,
+    &quot;ICSourceSystem&quot;: null,
+    &quot;CoverageTypeId&quot;: null,
+    &quot;CoverageName&quot;: &quot;Bodily Injury &amp; Property Damage&quot;,
+    &quot;Description&quot;: null,
+    &quot;StandardPremiumAmount&quot;: 497.54,
+    &quot;StandardTaxAmount&quot;: 32.10215,
+    &quot;StandardFeeAmount&quot;: 25,
+    &quot;TermFeeAmount&quot;: 25,
+    &quot;TermPremiumAmount&quot;: 497.54,
+    &quot;TermTaxAmount&quot;: 32.1,
+    &quot;TotalStandardAmount&quot;: 554.64,
+    &quot;External_ID__c&quot;: null,
+    &quot;omnistudio_fsc__AttributesSelectedValues__c&quot;: &quot;{}&quot;,
+    &quot;omnistudio_fsc__FeeAmount__c&quot;: null,
+    &quot;omnistudio_fsc__InsurancePolicyParticipantId__c&quot;: null,
+    &quot;omnistudio_fsc__Product2Id__c&quot;: &quot;01t5e000002iiXLAAY&quot;,
+    &quot;omnistudio_fsc__ProductChildItemId__c&quot;: &quot;aGz5e000000TSi9CAG&quot;,
+    &quot;omnistudio_fsc__ProductCode__c&quot;: &quot;autoMulti&quot;,
+    &quot;omnistudio_fsc__ProratedFeeAmount__c&quot;: null,
+    &quot;omnistudio_fsc__ProratedPremiumAmount__c&quot;: null,
+    &quot;omnistudio_fsc__ProratedTaxAmount__c&quot;: null,
+    &quot;omnistudio_fsc__TaxAmount__c&quot;: null,
+    &quot;omnistudio_fsc__TotalAmount__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalProratedAmount__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalTaxFeeAmount__c&quot;: 0,
+    &quot;OwnerId&quot;: &quot;0055e000006WQLgAAO&quot;,
+    &quot;IsDeleted&quot;: false,
+    &quot;Name&quot;: &quot;Rachel Adams - Multi Auto (Eff. 2021-09-07) 635514043&quot;,
+    &quot;RecordTypeId&quot;: null,
+    &quot;CreatedDate&quot;: &quot;2021-10-29T13:27:37.000+0000&quot;,
+    &quot;CreatedById&quot;: &quot;0055e000006WQLgAAO&quot;,
+    &quot;LastModifiedDate&quot;: &quot;2021-10-29T13:27:37.000+0000&quot;,
+    &quot;LastModifiedById&quot;: &quot;0055e000006WQLgAAO&quot;,
+    &quot;SystemModstamp&quot;: &quot;2021-10-29T13:27:37.000+0000&quot;,
+    &quot;MayEdit&quot;: true,
+    &quot;IsLocked&quot;: false,
+    &quot;LastViewedDate&quot;: &quot;2021-11-02T13:15:12.000+0000&quot;,
+    &quot;LastReferencedDate&quot;: &quot;2021-11-02T13:15:12.000+0000&quot;,
+    &quot;NameInsuredId&quot;: &quot;0015e00000Kx4ofAAB&quot;,
+    &quot;PolicyName&quot;: &quot;Multi Auto&quot;,
+    &quot;SourceSystem&quot;: null,
+    &quot;EffectiveDate&quot;: &quot;2021-09-07T14:00:00.000+0000&quot;,
+    &quot;ExpirationDate&quot;: &quot;2022-09-06T14:00:00.000+0000&quot;,
+    &quot;PremiumAmount&quot;: null,
+    &quot;PaymentDueDate&quot;: null,
+    &quot;CancellationDate&quot;: null,
+    &quot;CancellationReason&quot;: null,
+    &quot;RenewalDate&quot;: null,
+    &quot;FinalRenewalDate&quot;: null,
+    &quot;PolicyDescription&quot;: null,
+    &quot;Status&quot;: &quot;Initial&quot;,
+    &quot;ChangeType&quot;: null,
+    &quot;Substatus&quot;: &quot;Draft&quot;,
+    &quot;PremiumFrequency&quot;: null,
+    &quot;PlanTier&quot;: null,
+    &quot;AuditTerm&quot;: null,
+    &quot;ChangeSubtype&quot;: null,
+    &quot;PolicyType&quot;: &quot;Auto&quot;,
+    &quot;PlanType&quot;: null,
+    &quot;PriorPolicyId&quot;: null,
+    &quot;ProductId&quot;: &quot;01t5e000002iiYTAAY&quot;,
+    &quot;ParentPolicyId&quot;: null,
+    &quot;PreviousRenewalDate&quot;: null,
+    &quot;RenewalChannel&quot;: null,
+    &quot;FnolChannel&quot;: null,
+    &quot;ProducerId&quot;: null,
+    &quot;IsActive&quot;: true,
+    &quot;ServicingOfficeStreet&quot;: null,
+    &quot;ServicingOfficeCity&quot;: null,
+    &quot;ServicingOfficeState&quot;: null,
+    &quot;ServicingOfficePostalCode&quot;: null,
+    &quot;ServicingOfficeCountry&quot;: null,
+    &quot;ServicingOfficeLatitude&quot;: null,
+    &quot;ServicingOfficeLongitude&quot;: null,
+    &quot;ServicingOfficeGeocodeAccuracy&quot;: null,
+    &quot;ServicingOffice&quot;: null,
+    &quot;HasAnyAutoCoverage&quot;: false,
+    &quot;IsLoanEligibile&quot;: false,
+    &quot;TaxesSurcharges&quot;: null,
+    &quot;CashSurrenderValue&quot;: null,
+    &quot;IsRenewedPolicy&quot;: false,
+    &quot;SourceOpportunityId&quot;: null,
+    &quot;GrossWrittenPremium&quot;: 554.64,
+    &quot;CancellationReasonType&quot;: null,
+    &quot;SaleDate&quot;: null,
+    &quot;SourceQuoteId&quot;: &quot;0Q05e000000mO76CAE&quot;,
+    &quot;Discount&quot;: null,
+    &quot;PreviousPremium&quot;: null,
+    &quot;UniversalPolicyNumber&quot;: &quot;1122c7b8-ab0b-326f-8ee3-c65a5fef8713&quot;,
+    &quot;DateRenewed&quot;: null,
+    &quot;SourceSystemIdentifier&quot;: null,
+    &quot;UnderwritingEntityId&quot;: null,
+    &quot;OriginalPolicyId&quot;: null,
+    &quot;OriginalEffectiveDate&quot;: null,
+    &quot;OriginalExpirationDate&quot;: null,
+    &quot;PremiumCalculationMethod&quot;: null,
+    &quot;PremiumPaymentType&quot;: null,
+    &quot;PolicyTerm&quot;: &quot;Annual&quot;,
+    &quot;PaidToDate&quot;: null,
+    &quot;TotalSumInsured&quot;: null,
+    &quot;TotalCommissionAmount&quot;: null,
+    &quot;FinServ__Household__c&quot;: null,
+    &quot;INS_Policy_Term__c&quot;: &quot;364&quot;,
+    &quot;INS_Policy_Type_Icon__c&quot;: &quot;&lt;img src=\&quot;https://sfiseorg3-20210806-demo.my.salesforce.com/resource/INS_PolicyTypes/Auto.png\&quot; alt=\&quot;Auto\&quot; border=\&quot;0\&quot;/&gt;&quot;,
+    &quot;DB_Days__c&quot;: 0,
+    &quot;IA_Agency_Commission__c&quot;: null,
+    &quot;IA_Agency__c&quot;: null,
+    &quot;IA_Billing_Company__c&quot;: null,
+    &quot;IA_Billing_Type__c&quot;: null,
+    &quot;IA_Carrier_Policy_ID__c&quot;: null,
+    &quot;IA_Carrier__c&quot;: null,
+    &quot;IA_Deductible__c&quot;: null,
+    &quot;IA_Exposure_Info_Received_Date__c&quot;: null,
+    &quot;IA_Exposure_Info_Received__c&quot;: false,
+    &quot;IA_First_Written__c&quot;: null,
+    &quot;IA_Insured_Entity_Legal_Name__c&quot;: null,
+    &quot;IA_Issuing_Comapny__c&quot;: null,
+    &quot;IA_Limit__c&quot;: null,
+    &quot;IA_Policy_Held_with_Other_Agency__c&quot;: false,
+    &quot;IA_Proposal_Finalized_Date__c&quot;: null,
+    &quot;IA_Proposal_Finalized__c&quot;: false,
+    &quot;IA_Remarket_Flag__c&quot;: null,
+    &quot;IA_Remarket__c&quot;: false,
+    &quot;IA_Renewal_Lifecycle__c&quot;: &quot;&lt;img src=\&quot;/resource/1393860558000/onetwentDaysPlus\&quot; alt=\&quot;onetwentyplus\&quot; border=\&quot;0\&quot;/&gt;&quot;,
+    &quot;IA_Renewal_Quote_Accepted_Date__c&quot;: null,
+    &quot;IA_Renewal_Quote_Accepted__c&quot;: false,
+    &quot;IA_Renewal_Status__c&quot;: null,
+    &quot;IA_Renewal_Strategy_Meeting_Date__c&quot;: null,
+    &quot;IA_Renewal_Strategy_Meeting__c&quot;: false,
+    &quot;IA_Submission_to_Carriers_Date__c&quot;: null,
+    &quot;IA_Submission_to_Carriers__c&quot;: false,
+    &quot;omnistudio_fsc__ContractLineItemId__c&quot;: null,
+    &quot;omnistudio_fsc__MonthlyPremium__c&quot;: 41.461666666666666,
+    &quot;omnistudio_fsc__OriginalEffectiveDate__c&quot;: null,
+    &quot;omnistudio_fsc__OriginalExpirationDate__c&quot;: null,
+    &quot;omnistudio_fsc__OriginalPolicyId__c&quot;: null,
+    &quot;omnistudio_fsc__PaidToDate__c&quot;: null,
+    &quot;omnistudio_fsc__PolicyTerm__c&quot;: null,
+    &quot;omnistudio_fsc__PremiumCalculationMethod__c&quot;: &quot;Daily&quot;,
+    &quot;omnistudio_fsc__PremiumPaymentType__c&quot;: &quot;Advance&quot;,
+    &quot;omnistudio_fsc__TotalAmountForTerm__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalCommission__c&quot;: null,
+    &quot;omnistudio_fsc__TotalFeeForTerm__c&quot;: null,
+    &quot;omnistudio_fsc__TotalPremiumForTerm__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalSumInsured__c&quot;: null,
+    &quot;omnistudio_fsc__TotalTaxForTerm__c&quot;: null,
+    &quot;omnistudio_fsc__TotalFeeAmount__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalTaxAmount__c&quot;: 0,
+    &quot;Bot_Formatted_Effective_Date__c&quot;: &quot;9/7/2021&quot;,
+    &quot;Bot_Formatted_Expiration_Date__c&quot;: &quot;9/7/2021&quot;,
+    &quot;Policy_Alert__c&quot;: null,
+    &quot;omnistudio_fsc__ProductionCodeId__c&quot;: null,
+    &quot;PolicyStreet__c&quot;: null,
+    &quot;PolicyCity__c&quot;: null,
+    &quot;PolicyPostalCode__c&quot;: null,
+    &quot;PolicyState__c&quot;: null,
+    &quot;Grace_Period_Start_Date__c&quot;: null,
+    &quot;Grace_Period_End_Date__c&quot;: null,
+    &quot;Past_Due__c&quot;: null,
+    &quot;Next_Payment_Amount_Due__c&quot;: null,
+    &quot;Automatic_Payment_Amount__c&quot;: null,
+    &quot;Billing_Demo_Flow__c&quot;: &quot;&lt;a href=\&quot;https://docs.google.com/document/d/1VPQnPuZ2UWHIplvGxUILzqYBETLj804aFcSgZqezh8I/edit?usp=sharing\&quot; target=\&quot;self\&quot;&gt;Billing Demo Flow&lt;/a&gt;&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+    &quot;CategoryCode&quot;: null,
+    &quot;LimitRange&quot;: null,
+    &quot;LimitAmount&quot;: null,
+    &quot;LimitDate&quot;: null,
+    &quot;LimitPercentage&quot;: null,
+    &quot;ICPremiumAmount&quot;: 0,
+    &quot;DeductibleAmount&quot;: null,
+    &quot;Category&quot;: null,
+    &quot;CategoryGroup&quot;: null,
+    &quot;CategoryGroupType&quot;: null,
+    &quot;ICDiscount&quot;: null,
+    &quot;BenefitPaymentFrequency&quot;: null,
+    &quot;ICEffectiveDate&quot;: &quot;2021-09-07T14:00:00.000+0000&quot;,
+    &quot;ICExpirationDate&quot;: &quot;2022-09-07T13:59:59.000+0000&quot;,
+    &quot;IncomeOptionType&quot;: null,
+    &quot;DeathBenefitOptionType&quot;: null,
+    &quot;InsurancePolicyAssetId&quot;: &quot;0YW5e0000004q7KGAQ&quot;,
+    &quot;ICSourceSystemIdentifier&quot;: null,
+    &quot;ICSourceSystem&quot;: null,
+    &quot;CoverageTypeId&quot;: null,
+    &quot;CoverageName&quot;: &quot;Bodily Injury &amp; Property Damage&quot;,
+    &quot;Description&quot;: null,
+    &quot;StandardPremiumAmount&quot;: 497.54,
+    &quot;StandardTaxAmount&quot;: 32.10215,
+    &quot;StandardFeeAmount&quot;: 25,
+    &quot;TermFeeAmount&quot;: 25,
+    &quot;TermPremiumAmount&quot;: 497.54,
+    &quot;TermTaxAmount&quot;: 32.1,
+    &quot;TotalStandardAmount&quot;: 554.64,
+    &quot;External_ID__c&quot;: null,
+    &quot;omnistudio_fsc__AttributesSelectedValues__c&quot;: &quot;{}&quot;,
+    &quot;omnistudio_fsc__FeeAmount__c&quot;: null,
+    &quot;omnistudio_fsc__InsurancePolicyParticipantId__c&quot;: null,
+    &quot;omnistudio_fsc__Product2Id__c&quot;: &quot;01t5e000002iiXLAAY&quot;,
+    &quot;omnistudio_fsc__ProductChildItemId__c&quot;: &quot;aGz5e000000TSi9CAG&quot;,
+    &quot;omnistudio_fsc__ProductCode__c&quot;: &quot;autoMulti&quot;,
+    &quot;omnistudio_fsc__ProratedFeeAmount__c&quot;: null,
+    &quot;omnistudio_fsc__ProratedPremiumAmount__c&quot;: null,
+    &quot;omnistudio_fsc__ProratedTaxAmount__c&quot;: null,
+    &quot;omnistudio_fsc__TaxAmount__c&quot;: null,
+    &quot;omnistudio_fsc__TotalAmount__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalProratedAmount__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalTaxFeeAmount__c&quot;: 0,
+    &quot;OwnerId&quot;: &quot;0055e000006WQLgAAO&quot;,
+    &quot;IsDeleted&quot;: false,
+    &quot;Name&quot;: &quot;Rachel Adams - Multi Auto (Eff. 2021-09-07) 635514043&quot;,
+    &quot;RecordTypeId&quot;: null,
+    &quot;CreatedDate&quot;: &quot;2021-10-29T13:27:37.000+0000&quot;,
+    &quot;CreatedById&quot;: &quot;0055e000006WQLgAAO&quot;,
+    &quot;LastModifiedDate&quot;: &quot;2021-10-29T13:27:37.000+0000&quot;,
+    &quot;LastModifiedById&quot;: &quot;0055e000006WQLgAAO&quot;,
+    &quot;SystemModstamp&quot;: &quot;2021-10-29T13:27:37.000+0000&quot;,
+    &quot;MayEdit&quot;: true,
+    &quot;IsLocked&quot;: false,
+    &quot;LastViewedDate&quot;: &quot;2021-11-02T13:15:12.000+0000&quot;,
+    &quot;LastReferencedDate&quot;: &quot;2021-11-02T13:15:12.000+0000&quot;,
+    &quot;NameInsuredId&quot;: &quot;0015e00000Kx4ofAAB&quot;,
+    &quot;PolicyName&quot;: &quot;Multi Auto&quot;,
+    &quot;SourceSystem&quot;: null,
+    &quot;EffectiveDate&quot;: &quot;2021-09-07T14:00:00.000+0000&quot;,
+    &quot;ExpirationDate&quot;: &quot;2022-09-06T14:00:00.000+0000&quot;,
+    &quot;PremiumAmount&quot;: null,
+    &quot;PaymentDueDate&quot;: null,
+    &quot;CancellationDate&quot;: null,
+    &quot;CancellationReason&quot;: null,
+    &quot;RenewalDate&quot;: null,
+    &quot;FinalRenewalDate&quot;: null,
+    &quot;PolicyDescription&quot;: null,
+    &quot;Status&quot;: &quot;Initial&quot;,
+    &quot;ChangeType&quot;: null,
+    &quot;Substatus&quot;: &quot;Draft&quot;,
+    &quot;PremiumFrequency&quot;: null,
+    &quot;PlanTier&quot;: null,
+    &quot;AuditTerm&quot;: null,
+    &quot;ChangeSubtype&quot;: null,
+    &quot;PolicyType&quot;: &quot;Auto&quot;,
+    &quot;PlanType&quot;: null,
+    &quot;PriorPolicyId&quot;: null,
+    &quot;ProductId&quot;: &quot;01t5e000002iiYTAAY&quot;,
+    &quot;ParentPolicyId&quot;: null,
+    &quot;PreviousRenewalDate&quot;: null,
+    &quot;RenewalChannel&quot;: null,
+    &quot;FnolChannel&quot;: null,
+    &quot;ProducerId&quot;: null,
+    &quot;IsActive&quot;: true,
+    &quot;ServicingOfficeStreet&quot;: null,
+    &quot;ServicingOfficeCity&quot;: null,
+    &quot;ServicingOfficeState&quot;: null,
+    &quot;ServicingOfficePostalCode&quot;: null,
+    &quot;ServicingOfficeCountry&quot;: null,
+    &quot;ServicingOfficeLatitude&quot;: null,
+    &quot;ServicingOfficeLongitude&quot;: null,
+    &quot;ServicingOfficeGeocodeAccuracy&quot;: null,
+    &quot;ServicingOffice&quot;: null,
+    &quot;HasAnyAutoCoverage&quot;: false,
+    &quot;IsLoanEligibile&quot;: false,
+    &quot;TaxesSurcharges&quot;: null,
+    &quot;CashSurrenderValue&quot;: null,
+    &quot;IsRenewedPolicy&quot;: false,
+    &quot;SourceOpportunityId&quot;: null,
+    &quot;GrossWrittenPremium&quot;: 554.64,
+    &quot;CancellationReasonType&quot;: null,
+    &quot;SaleDate&quot;: null,
+    &quot;SourceQuoteId&quot;: &quot;0Q05e000000mO76CAE&quot;,
+    &quot;Discount&quot;: null,
+    &quot;PreviousPremium&quot;: null,
+    &quot;UniversalPolicyNumber&quot;: &quot;1122c7b8-ab0b-326f-8ee3-c65a5fef8713&quot;,
+    &quot;DateRenewed&quot;: null,
+    &quot;SourceSystemIdentifier&quot;: null,
+    &quot;UnderwritingEntityId&quot;: null,
+    &quot;OriginalPolicyId&quot;: null,
+    &quot;OriginalEffectiveDate&quot;: null,
+    &quot;OriginalExpirationDate&quot;: null,
+    &quot;PremiumCalculationMethod&quot;: null,
+    &quot;PremiumPaymentType&quot;: null,
+    &quot;PolicyTerm&quot;: &quot;Annual&quot;,
+    &quot;PaidToDate&quot;: null,
+    &quot;TotalSumInsured&quot;: null,
+    &quot;TotalCommissionAmount&quot;: null,
+    &quot;FinServ__Household__c&quot;: null,
+    &quot;INS_Policy_Term__c&quot;: &quot;364&quot;,
+    &quot;INS_Policy_Type_Icon__c&quot;: &quot;&lt;img src=\&quot;https://sfiseorg3-20210806-demo.my.salesforce.com/resource/INS_PolicyTypes/Auto.png\&quot; alt=\&quot;Auto\&quot; border=\&quot;0\&quot;/&gt;&quot;,
+    &quot;DB_Days__c&quot;: 0,
+    &quot;IA_Agency_Commission__c&quot;: null,
+    &quot;IA_Agency__c&quot;: null,
+    &quot;IA_Billing_Company__c&quot;: null,
+    &quot;IA_Billing_Type__c&quot;: null,
+    &quot;IA_Carrier_Policy_ID__c&quot;: null,
+    &quot;IA_Carrier__c&quot;: null,
+    &quot;IA_Deductible__c&quot;: null,
+    &quot;IA_Exposure_Info_Received_Date__c&quot;: null,
+    &quot;IA_Exposure_Info_Received__c&quot;: false,
+    &quot;IA_First_Written__c&quot;: null,
+    &quot;IA_Insured_Entity_Legal_Name__c&quot;: null,
+    &quot;IA_Issuing_Comapny__c&quot;: null,
+    &quot;IA_Limit__c&quot;: null,
+    &quot;IA_Policy_Held_with_Other_Agency__c&quot;: false,
+    &quot;IA_Proposal_Finalized_Date__c&quot;: null,
+    &quot;IA_Proposal_Finalized__c&quot;: false,
+    &quot;IA_Remarket_Flag__c&quot;: null,
+    &quot;IA_Remarket__c&quot;: false,
+    &quot;IA_Renewal_Lifecycle__c&quot;: &quot;&lt;img src=\&quot;/resource/1393860558000/onetwentDaysPlus\&quot; alt=\&quot;onetwentyplus\&quot; border=\&quot;0\&quot;/&gt;&quot;,
+    &quot;IA_Renewal_Quote_Accepted_Date__c&quot;: null,
+    &quot;IA_Renewal_Quote_Accepted__c&quot;: false,
+    &quot;IA_Renewal_Status__c&quot;: null,
+    &quot;IA_Renewal_Strategy_Meeting_Date__c&quot;: null,
+    &quot;IA_Renewal_Strategy_Meeting__c&quot;: false,
+    &quot;IA_Submission_to_Carriers_Date__c&quot;: null,
+    &quot;IA_Submission_to_Carriers__c&quot;: false,
+    &quot;omnistudio_fsc__ContractLineItemId__c&quot;: null,
+    &quot;omnistudio_fsc__MonthlyPremium__c&quot;: 41.461666666666666,
+    &quot;omnistudio_fsc__OriginalEffectiveDate__c&quot;: null,
+    &quot;omnistudio_fsc__OriginalExpirationDate__c&quot;: null,
+    &quot;omnistudio_fsc__OriginalPolicyId__c&quot;: null,
+    &quot;omnistudio_fsc__PaidToDate__c&quot;: null,
+    &quot;omnistudio_fsc__PolicyTerm__c&quot;: null,
+    &quot;omnistudio_fsc__PremiumCalculationMethod__c&quot;: &quot;Daily&quot;,
+    &quot;omnistudio_fsc__PremiumPaymentType__c&quot;: &quot;Advance&quot;,
+    &quot;omnistudio_fsc__TotalAmountForTerm__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalCommission__c&quot;: null,
+    &quot;omnistudio_fsc__TotalFeeForTerm__c&quot;: null,
+    &quot;omnistudio_fsc__TotalPremiumForTerm__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalSumInsured__c&quot;: null,
+    &quot;omnistudio_fsc__TotalTaxForTerm__c&quot;: null,
+    &quot;omnistudio_fsc__TotalFeeAmount__c&quot;: 0,
+    &quot;omnistudio_fsc__TotalTaxAmount__c&quot;: 0,
+    &quot;Bot_Formatted_Effective_Date__c&quot;: &quot;9/7/2021&quot;,
+    &quot;Bot_Formatted_Expiration_Date__c&quot;: &quot;9/7/2021&quot;,
+    &quot;Policy_Alert__c&quot;: null,
+    &quot;omnistudio_fsc__ProductionCodeId__c&quot;: null,
+    &quot;PolicyStreet__c&quot;: null,
+    &quot;PolicyCity__c&quot;: null,
+    &quot;PolicyPostalCode__c&quot;: null,
+    &quot;PolicyState__c&quot;: null,
+    &quot;Grace_Period_Start_Date__c&quot;: null,
+    &quot;Grace_Period_End_Date__c&quot;: null,
+    &quot;Past_Due__c&quot;: null,
+    &quot;Next_Payment_Amount_Due__c&quot;: null,
+    &quot;Automatic_Payment_Amount__c&quot;: null,
+    &quot;Billing_Demo_Flow__c&quot;: &quot;&lt;a href=\&quot;https://docs.google.com/document/d/1VPQnPuZ2UWHIplvGxUILzqYBETLj804aFcSgZqezh8I/edit?usp=sharing\&quot; target=\&quot;self\&quot;&gt;Billing Demo Flow&lt;/a&gt;&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>extractInsPolicyAndBrokerageSplits</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c0ffe47d-2f57-491e-9811-1d3985f60172</globalKey>
+        <inputFieldName>InsurancePolicy:Funding__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Funding__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a0f6efdb-6513-4901-bdcd-b7ca0e4a61d8</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Payee_Relationships__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Payee_Relationships__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>bf10834d-8ae5-485f-b941-eb184bb6c87d</globalKey>
+        <inputFieldName>InsurancePolicy:Metal_Level__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Metal_Level__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e7e19a0a-d3e5-42f4-b9cf-c4ac1eedeceb</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Producer__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Producer__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a7d4a9d5-ff73-48a0-9240-3f318420ac51</globalKey>
+        <inputFieldName>InsurancePolicy:IA_Commission_Percentage__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IA_Commission_Percentage__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>268211be-7db2-4b96-a50b-9be5337aacf8</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Round_To_Payee__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Round_To_Payee__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d109e0d5-5df0-4939-b38e-41f03aea92f3</globalKey>
+        <inputFieldName>InsurancePolicy:IA_Service_Lead__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IA_Service_Lead__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8ad52225-513f-47cb-a348-ed47616c359c</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Producer__r.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:producerName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>36cb53f2-03dc-4caf-9cc2-b463d49b6c82</globalKey>
+        <inputFieldName>InsurancePolicy:Department__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Department__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>22f16eb6-8486-48be-8987-8e59dcf51b5d</globalKey>
+        <inputFieldName>InsurancePolicy:omnistudio_fsc__MonthlyPremium__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:omnistudio_fsc__MonthlyPremium__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a251ea42-6eff-4b19-941f-52e07af01abb</globalKey>
+        <inputFieldName>InsurancePolicy:Group__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Group__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9369cd44-d38c-417c-b162-634020d9423b</globalKey>
+        <inputFieldName>InsurancePolicy:OwnerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:OwnerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b8aad780-15b0-4ae0-8ab4-24e58cce4a09</globalKey>
+        <inputFieldName>InsurancePolicy:Continuous__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Continuous__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2bbfa81c-080b-40a8-b760-8e45b1c2b908</globalKey>
+        <inputFieldName>InsurancePolicy:IsRenewedPolicy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IsRenewedPolicy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0f9121cd-c7f1-428a-b5c0-6ab526c0237b</globalKey>
+        <inputFieldName>InsurancePolicy:HasAnyAutoCoverage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:HasAnyAutoCoverage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5c51feba-900b-4e32-96d0-f6c1bb6f2809</globalKey>
+        <inputFieldName>InsurancePolicy:SourceOpportunityId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:SourceOpportunityId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5a1bdeae-ddd5-4f46-942d-da32f4f3f453</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Brokerage_Split__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Brokerage_Split__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0981531d-5ade-411e-8458-b861c0a91704</globalKey>
+        <inputFieldName>InsurancePolicy:fPolicyNewName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:PolicyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3e155537-fb93-41f7-9f24-396dbef7b597</globalKey>
+        <inputFieldName>InsurancePolicy:IsLoanEligibile</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IsLoanEligibile</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>230259c4-77c4-4317-8989-d1672a996f2d</globalKey>
+        <inputFieldName>InsurancePolicy:omnistudio_fsc__PremiumPaymentType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:omnistudio_fsc__PremiumPaymentType__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e121b4f3-61a8-4497-9a51-87934b96d032</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Commission_Percentage__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Commission_Percentage__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>66ac7172-c01b-4bbf-96b0-53942e6bc9cf</globalKey>
+        <inputFieldName>InsurancePolicy:ProducerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:ProducerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6858a1e1-694c-4194-9259-3d084cb77899</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Company_Payee__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Company_Payee__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b5b6d486-b42a-45c0-acf6-2504661b09a2</globalKey>
+        <inputFieldName>InsurancePolicy:Line_of_Coverage__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Line_of_Coverage__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>35033550-c188-4379-bc93-92c7fd2e1338</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2f2355cc-53b4-4496-8eb1-427cee1f9b32</globalKey>
+        <inputFieldName>InsurancePolicy:BOR__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:BOR__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7ec246df-e6bf-4cb4-a8f3-b623560acfce</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Override_Percentage__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Override_Percentage__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:InsurancePolicy:PolicyName &quot;-CLONE&quot; CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(InsurancePolicy:PolicyName,&quot;-CLONE&quot;)</formulaExpression>
+        <formulaResultPath>InsurancePolicy:fPolicyNewName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>653e68ae-9d43-4241-988e-aca4bd59d357</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:InsurancePolicy:Name &quot;-CLONE&quot; CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(InsurancePolicy:Name,&quot;-CLONE&quot;)</formulaExpression>
+        <formulaResultPath>InsurancePolicy:fNewName</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>d9f87f9f-3bbc-4710-8619-d08e1cdfcb50</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9c3d6c05-1c4d-4517-9589-4e0e633f42be</globalKey>
+        <inputFieldName>InsurancePolicy:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>policyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fdc3809a-0cd1-456c-9b2b-91ad6acd0c81</globalKey>
+        <inputFieldName>InsurancePolicy:omnistudio_fsc__MonthlyPremium__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>monthlyPremium</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>718b0466-ef5f-4921-b214-64a7aec95fc2</globalKey>
+        <inputFieldName>InsurancePolicy:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>currentPolicyStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>80f90aac-fd9c-4190-9e5f-d2fd85c0b3ad</globalKey>
+        <inputFieldName>InsurancePolicy:IA_Billing_Type__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IA_Billing_Type__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>policyId</filterValue>
+        <globalKey>e6e46c58-a482-4cdf-ad2b-5fcd3df16d11</globalKey>
+        <inputFieldName>Insurance_Policy__c</inputFieldName>
+        <inputObjectName>Brokerage_Split__c</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b326353e-f30c-4e7f-824b-2bf5b85b28f8</globalKey>
+        <inputFieldName>InsurancePolicy:IA_Carrier__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IA_Carrier__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f52e8b2f-1232-49b1-8962-e9b251a28992</globalKey>
+        <inputFieldName>BrokerageSplit:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b69a7f6e-05a1-4d56-86d1-d30ac9d21383</globalKey>
+        <inputFieldName>BrokerageSplit:New_Business_Split__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:New_Business_Split__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>62a058bf-dff9-4c9c-8cff-54c2d850bc36</globalKey>
+        <inputFieldName>BrokerageSplit:OwnerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:OwnerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>80b5b6b7-952f-4f6a-84b2-6661a2cc202a</globalKey>
+        <inputFieldName>BrokerageSplit:Split_Effective_Date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Split_Effective_Date__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6e3d3a57-83d9-4309-b727-27dbc6c6a1fc</globalKey>
+        <inputFieldName>BrokerageSplit:Split_End_Date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Split_End_Date__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c01c60dd-07be-4adb-a786-f9c098724389</globalKey>
+        <inputFieldName>InsurancePolicy:PlanType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:PlanType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e45d3134-cbfb-4fe7-90c1-e265a4f20b31</globalKey>
+        <inputFieldName>fRecommendedRenewalStart</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recommendedRenewalStart</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3ea308af-a30e-4e77-9fbd-7f284f37c82f</globalKey>
+        <inputFieldName>InsurancePolicy:ParentPolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:ParentPolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>BrokerageSplit:Id</filterValue>
+        <globalKey>95f6a1ac-1b38-4f72-8fdc-cf340d7e3569</globalKey>
+        <inputFieldName>Brokerage_Split__c</inputFieldName>
+        <inputObjectName>Split_Payee__c</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2dc7194f-efee-4868-b70b-b4fe195f9a02</globalKey>
+        <inputFieldName>InsurancePolicy:NameInsuredId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:NameInsuredId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>62b9b415-d90a-4dfc-9f96-2df42a31567c</globalKey>
+        <inputFieldName>BrokerageSplit:Payee:Bonus_Percentage__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BrokerageSplit:Payee:Bonus_Percentage__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>46e372ac-1f8c-4ed5-bfcc-b7f0e6953255</globalKey>
+        <inputFieldName>InsurancePolicy:omnistudio_fsc__PremiumCalculationMethod__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:omnistudio_fsc__PremiumCalculationMethod__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>39144292-7ce9-4d27-97d5-8902994212b2</globalKey>
+        <inputFieldName>InsurancePolicy:fNewName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>772ea2a8-a62f-4bfc-98ae-a1024250819d</globalKey>
+        <inputFieldName>InsurancePolicy:IA_Billing_Company__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:IA_Billing_Company__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d3669245-562b-498f-bb7e-98889c1b0f60</globalKey>
+        <inputFieldName>InsurancePolicy:Line_of_Coverage__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>lineOfCoverage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9e439b09-9ce2-4031-961f-39f5606d7b28</globalKey>
+        <inputFieldName>InsurancePolicy:RenewalDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MMMM d, yyyy)</outputFieldFormat>
+        <outputFieldName>currentRenewalDateDisplay</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8b657f6e-773f-45c7-b80c-8dc7ac77dcb4</globalKey>
+        <inputFieldName>InsurancePolicy:RenewalDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>renewalDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:fRecommendedRenewalStart 1 ADDYEAR -1 ADDDAY</formulaConverted>
+        <formulaExpression>ADDDAY(ADDYEAR(fRecommendedRenewalStart,1),-1)</formulaExpression>
+        <formulaResultPath>fRecommendedRenewalEnd</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>d152eb69-7ec5-416d-a495-690a75ede846</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>policyId</filterValue>
+        <globalKey>5be7f6a5-abcb-42c1-879b-e863a92af97c</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>InsurancePolicy</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>38c9a6c0-5e11-45af-ba78-3b50f93bbf5e</globalKey>
+        <inputFieldName>fRecommendedRenewalEnd</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>renewalEnd</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3ddc9f10-8842-4bb6-b88b-92cec811cff9</globalKey>
+        <inputFieldName>InsurancePolicy:Substatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicy:Substatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:InsurancePolicy:RenewalDate | TODAY &gt; var:InsurancePolicy:RenewalDate | TODAY IF</formulaConverted>
+        <formulaExpression>IF(InsurancePolicy:RenewalDate&gt; TODAY(), InsurancePolicy:RenewalDate, TODAY())</formulaExpression>
+        <formulaResultPath>fRecommendedRenewalStart</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>2ec25ca8-ba2d-4f18-b4dc-c7058191785b</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>extractInsPolicyAndBrokerageSplits</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{&quot;policyId&quot;:&quot;0YT5f0000008uloGAA&quot;}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>extractInsPolicyAndBrokerageSplits_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

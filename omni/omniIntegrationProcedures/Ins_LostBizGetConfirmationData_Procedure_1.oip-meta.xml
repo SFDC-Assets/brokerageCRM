@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;AccountPolicies&quot;: [
+        {
+            &quot;Id&quot;: &quot;0YT5f000000BNCdGAO&quot;,
+            &quot;RenewalDate&quot;: &quot;2023-05-18&quot;,
+            &quot;CarrierName&quot;: &quot;Aetna&quot;,
+            &quot;Funding&quot;: &quot;Fully Insured&quot;,
+            &quot;MedalType&quot;: &quot;Silver&quot;,
+            &quot;PlanType&quot;: &quot;Medical HDHP&quot;,
+            &quot;PolNumber&quot;: &quot;Group Medical-CLONE&quot;,
+            &quot;PolName&quot;: &quot;MED 1234-CLONE&quot;,
+            &quot;Status&quot;: &quot;Initial&quot;,
+            &quot;PolicyNumber&quot;: &quot;Group Medical-CLONE&quot;,
+            &quot;Name&quot;: &quot;MED 1234-CLONE&quot;,
+            &quot;EffectiveDate&quot;: &quot;2022-05-19T00:00:00.000Z&quot;,
+            &quot;uniqueKey&quot;: &quot;REC0&quot;,
+            &quot;_flex&quot;: {
+                &quot;uniqueKey&quot;: &quot;REC0&quot;,
+                &quot;isSelected&quot;: true
+            },
+            &quot;Flex&quot;: {
+                &quot;isSelected&quot;: true
+            }
+        }
+    ],
+    &quot;AccountOpptys&quot;: [
+        {
+            &quot;Id&quot;: &quot;0065f000002p6kfAAA&quot;,
+            &quot;Amount&quot;: 3400000,
+            &quot;CloseDate_TODAY__c&quot;: -259,
+            &quot;Name&quot;: &quot;EB Group Benefits&quot;,
+            &quot;fclosed&quot;: 0,
+            &quot;StageName&quot;: &quot;Client Presentation&quot;,
+            &quot;Status_Value__c&quot;: &quot;bad&quot;,
+            &quot;CloseDate&quot;: &quot;2021-09-28&quot;,
+            &quot;IsClosed&quot;: false,
+            &quot;uniqueKey&quot;: &quot;REC0&quot;,
+            &quot;_flex&quot;: {
+                &quot;uniqueKey&quot;: &quot;REC0&quot;,
+                &quot;isSelected&quot;: true
+            },
+            &quot;Flex&quot;: {
+                &quot;isSelected&quot;: true
+            }
+        }
+    ]
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>InsLostBizGetConfirmationData</name>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ConfirmOpptys</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;elementValueMap&quot;:{&quot;AccountOpptys&quot;:&quot;%DoNotSelectOpptys%&quot;},&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;show&quot;:null,&quot;label&quot;:&quot;SetValues2&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DoNotSelectOpptys</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;useFormulas&quot;:true,&quot;additionalInput&quot;:{},&quot;additionalOutput&quot;:{&quot;DoNotSelect&quot;:true},&quot;failureResponse&quot;:{},&quot;sendOnlyAdditionalInput&quot;:false,&quot;returnOnlyAdditionalOutput&quot;:false,&quot;returnOnlyFailureResponse&quot;:false,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;advancedMerge&quot;:false,&quot;advancedMergeMap&quot;:[],&quot;mergeFields&quot;:[&quot;Id&quot;],&quot;allowMergeNulls&quot;:true,&quot;hasPrimary&quot;:false,&quot;primaryListKey&quot;:&quot;&quot;,&quot;sortBy&quot;:[],&quot;sortInDescendingOrder&quot;:false,&quot;mergeListsOrder&quot;:[&quot;AccountOpptys&quot;],&quot;filterListFormula&quot;:&quot;&quot;,&quot;dynamicOutputFields&quot;:&quot;&quot;,&quot;updateFieldValue&quot;:{},&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;additionalChainableResponse&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ListAction1&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ConditionalOpptys</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;%AccountOpptys% != \&quot;\&quot; &quot;,&quot;isIfElseBlock&quot;:false,&quot;show&quot;:null,&quot;label&quot;:&quot;ConditionalBlock2&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ConfirmPolicies</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;elementValueMap&quot;:{&quot;AccountPolicies&quot;:&quot;%DoNotSelectPolicies%&quot;},&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;show&quot;:null,&quot;label&quot;:&quot;SetValues1&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DoNotSelectPolicies</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;failureConditionalFormula&quot;:&quot;&quot;,&quot;failOnStepError&quot;:true,&quot;useFormulas&quot;:true,&quot;additionalInput&quot;:{},&quot;additionalOutput&quot;:{&quot;DoNotSelect&quot;:true},&quot;failureResponse&quot;:{},&quot;sendOnlyAdditionalInput&quot;:false,&quot;returnOnlyAdditionalOutput&quot;:false,&quot;returnOnlyFailureResponse&quot;:false,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;advancedMerge&quot;:false,&quot;advancedMergeMap&quot;:[],&quot;mergeFields&quot;:[&quot;Id&quot;],&quot;allowMergeNulls&quot;:true,&quot;hasPrimary&quot;:false,&quot;primaryListKey&quot;:&quot;&quot;,&quot;sortBy&quot;:[],&quot;sortInDescendingOrder&quot;:false,&quot;mergeListsOrder&quot;:[&quot;AccountPolicies&quot;],&quot;filterListFormula&quot;:&quot;&quot;,&quot;dynamicOutputFields&quot;:&quot;&quot;,&quot;updateFieldValue&quot;:{},&quot;chainOnStep&quot;:false,&quot;actionMessage&quot;:&quot;&quot;,&quot;additionalChainableResponse&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ListAction1&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ConditionalPolicies</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;%AccountPolicies% != \&quot;\&quot; &quot;,&quot;isIfElseBlock&quot;:false,&quot;show&quot;:null,&quot;label&quot;:&quot;ConditionalBlock3&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Response1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;executionConditionalFormula&quot;:&quot;&quot;,&quot;useFormulas&quot;:true,&quot;additionalOutput&quot;:{&quot;ConfirmPolicies&quot;:&quot;%ConfirmPolicies%&quot;,&quot;ConfirmOpptys&quot;:&quot;%ConfirmOpptys%&quot;,&quot;CountConfirmPolicies&quot;:&quot;=IF(%AccountPolicies% != \&quot;\&quot;, LISTSIZE(%ConfirmPolicies%), 0)&quot;,&quot;CountConfirmOpptys&quot;:&quot;=IF(%AccountOpptys% != \&quot;\&quot;,LISTSIZE(%ConfirmOpptys%),0)&quot;},&quot;returnOnlyAdditionalOutput&quot;:true,&quot;returnFullDataJSON&quot;:false,&quot;responseFormat&quot;:&quot;JSON&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseDefaultData&quot;:{},&quot;vlcResponseHeaders&quot;:{},&quot;show&quot;:null,&quot;label&quot;:&quot;ResponseAction1&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>Ins_LostBizGetConfirmationData</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{&quot;linkToExternalObject&quot;:&quot;&quot;,&quot;trackingCustomData&quot;:{},&quot;includeAllActionsInResponse&quot;:false,&quot;columnsPropertyMap&quot;:[],&quot;relationshipFieldsMap&quot;:[],&quot;labelSingular&quot;:&quot;&quot;,&quot;labelPlural&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;nameColumn&quot;:&quot;&quot;,&quot;rollbackOnError&quot;:false,&quot;chainableQueriesLimit&quot;:50,&quot;chainableDMLStatementsLimit&quot;:null,&quot;chainableCpuLimit&quot;:2000,&quot;chainableHeapSizeLimit&quot;:null,&quot;chainableDMLRowsLimit&quot;:null,&quot;chainableQueryRowsLimit&quot;:null,&quot;chainableSoslQueriesLimit&quot;:null,&quot;chainableActualTimeLimit&quot;:null,&quot;additionalChainableResponse&quot;:{},&quot;queueableChainableQueriesLimit&quot;:120,&quot;queueableChainableCpuLimit&quot;:40000,&quot;queueableChainableHeapSizeLimit&quot;:6,&quot;ttlMinutes&quot;:5,&quot;mockResponseMap&quot;:{}}</propertySetConfig>
+    <subType>LostBizGetConfirmationData</subType>
+    <type>Ins</type>
+    <uniqueName>Ins_LostBizGetConfirmationData_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>ab3de1f0-4761-fd98-6b6a-8e65c97d837b</webComponentKey>
+</OmniIntegrationProcedure>

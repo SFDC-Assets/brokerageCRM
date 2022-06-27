@@ -11,7 +11,6 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
-    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>BrokerForce</label>
     <navType>Console</navType>
     <tabs>standard-home</tabs>
@@ -19,6 +18,8 @@
     <tabs>standard-ActionPlan</tabs>
     <tabs>standard-ActionPlanTemplate</tabs>
     <tabs>standard-WaveHomeLightning</tabs>
+    <tabs>standard-Benefit</tabs>
+    <tabs>standard-BenefitType</tabs>
     <tabs>standard-Case</tabs>
     <tabs>standard-Claim</tabs>
     <tabs>standard-Contact</tabs>
@@ -37,6 +38,7 @@
     <tabs>Brokerage_Split__c</tabs>
     <tabs>Calculated_Commission__c</tabs>
     <tabs>Split_Payee__c</tabs>
+    <tabs>Commission_Statement__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>BrokerForce_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -45,6 +47,9 @@
         </mappings>
         <mappings>
             <tab>Calculated_Commission__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Commission_Statement__c</tab>
         </mappings>
         <mappings>
             <tab>Direct_Bill_Commission__c</tab>
@@ -69,6 +74,12 @@
         </mappings>
         <mappings>
             <tab>standard-ActionPlanTemplate</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Benefit</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-BenefitType</tab>
         </mappings>
         <mappings>
             <tab>standard-Case</tab>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>LostExistingBusiness</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CancelSelectedPolicies</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;CancelSelectedPolicies&quot;,&quot;integrationProcedureKey&quot;:&quot;Ins_LostBizCancelPolicies&quot;,&quot;useContinuation&quot;:false,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false},&quot;remoteTimeout&quot;:30000,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;extraPayload&quot;:{&quot;LossDate&quot;:&quot;%StepEnterLossDetails:LossDate%&quot;,&quot;LossReason&quot;:&quot;%StepEnterLossDetails:LossReason%&quot;,&quot;ContactWithClient&quot;:&quot;%StepEnterLossDetails:ContactWithClient%&quot;,&quot;SelectedPolicies&quot;:&quot;%ConfirmPolicies:AccountPolicies%&quot;},&quot;inProgressMessage&quot;:&quot;In Progress&quot;,&quot;postMessage&quot;:&quot;Done&quot;,&quot;failureNextLabel&quot;:&quot;Continue&quot;,&quot;failureAbortLabel&quot;:&quot;Abort&quot;,&quot;failureGoBackLabel&quot;:&quot;Go Back&quot;,&quot;failureAbortMessage&quot;:&quot;Are you sure?&quot;,&quot;validationRequired&quot;:&quot;Step&quot;,&quot;redirectPageName&quot;:&quot;&quot;,&quot;redirectTemplateUrl&quot;:&quot;vlcAcknowledge.html&quot;,&quot;redirectNextLabel&quot;:&quot;Next&quot;,&quot;redirectNextWidth&quot;:3,&quot;redirectPreviousLabel&quot;:&quot;Previous&quot;,&quot;redirectPreviousWidth&quot;:3,&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmPolicies&quot;}]}},&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;svgSprite&quot;:&quot;&quot;,&quot;svgIcon&quot;:&quot;&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;enableDefaultAbort&quot;:false,&quot;enableActionMessage&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;,&quot;sendOnlyExtraPayload&quot;:true}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CloseOpportunities</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;CloseOpportunities&quot;,&quot;integrationProcedureKey&quot;:&quot;Ins_LostBizCloseOpportunities&quot;,&quot;useContinuation&quot;:false,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false},&quot;remoteTimeout&quot;:30000,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;extraPayload&quot;:{&quot;ConfirmOpptys&quot;:&quot;%ConfirmOpptys%&quot;,&quot;LossDate&quot;:&quot;%StepEnterLossDetails:LossDate%&quot;},&quot;inProgressMessage&quot;:&quot;In Progress&quot;,&quot;postMessage&quot;:&quot;Done&quot;,&quot;failureNextLabel&quot;:&quot;Continue&quot;,&quot;failureAbortLabel&quot;:&quot;Abort&quot;,&quot;failureGoBackLabel&quot;:&quot;Go Back&quot;,&quot;failureAbortMessage&quot;:&quot;Are you sure?&quot;,&quot;validationRequired&quot;:&quot;Step&quot;,&quot;redirectPageName&quot;:&quot;&quot;,&quot;redirectTemplateUrl&quot;:&quot;vlcAcknowledge.html&quot;,&quot;redirectNextLabel&quot;:&quot;Next&quot;,&quot;redirectNextWidth&quot;:3,&quot;redirectPreviousLabel&quot;:&quot;Previous&quot;,&quot;redirectPreviousWidth&quot;:3,&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmOpptys&quot;}]}},&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;svgSprite&quot;:&quot;&quot;,&quot;svgIcon&quot;:&quot;&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;enableDefaultAbort&quot;:false,&quot;enableActionMessage&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;,&quot;sendOnlyExtraPayload&quot;:true}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CheckOpportunities</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;disOnTplt&quot;:false,&quot;hide&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;accessibleInFutureSteps&quot;:false,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmOpptys&quot;}]}},&quot;checkLabel&quot;:&quot;Update Selected Opportunities&quot;,&quot;helpTextPos&quot;:&quot;&quot;,&quot;helpText&quot;:&quot;&quot;,&quot;help&quot;:false,&quot;defaultValue&quot;:false,&quot;readOnly&quot;:false,&quot;repeatLimit&quot;:null,&quot;repeatClone&quot;:false,&quot;repeat&quot;:false,&quot;label&quot;:&quot;Checkbox1&quot;,&quot;controlWidth&quot;:12}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Checkbox</type>
+        </childElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CheckPolicies</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Checkbox1&quot;,&quot;repeat&quot;:false,&quot;repeatClone&quot;:false,&quot;repeatLimit&quot;:null,&quot;readOnly&quot;:false,&quot;defaultValue&quot;:false,&quot;help&quot;:false,&quot;helpText&quot;:&quot;&quot;,&quot;helpTextPos&quot;:&quot;&quot;,&quot;checkLabel&quot;:&quot;Update Selected Policies&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmPolicies&quot;}]}},&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;accessibleInFutureSteps&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;hide&quot;:false,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Checkbox</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC3</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;CustomLWC3&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmPolicies&quot;}]}},&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;hide&quot;:false,&quot;lwcName&quot;:&quot;cfInsLostBizPolicyParent&quot;,&quot;bStandalone&quot;:true,&quot;customAttributes&quot;:[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%ConfirmPolicies%&quot;}]}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC4</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;CustomLWC4&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmOpptys&quot;}]}},&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;hide&quot;:false,&quot;lwcName&quot;:&quot;cfInsLostBizOpptyParent&quot;,&quot;bStandalone&quot;:true,&quot;customAttributes&quot;:[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%ConfirmOpptys%&quot;}]}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ConfirmStep</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;label&quot;:&quot;Confirm Updates&quot;,&quot;validationRequired&quot;:true,&quot;previousLabel&quot;:&quot;Previous&quot;,&quot;previousWidth&quot;:3,&quot;nextLabel&quot;:&quot;Next&quot;,&quot;nextWidth&quot;:3,&quot;cancelLabel&quot;:&quot;Cancel&quot;,&quot;cancelMessage&quot;:&quot;Are you sure?&quot;,&quot;saveLabel&quot;:&quot;Save for later&quot;,&quot;saveMessage&quot;:&quot;Are you sure you want to save it for later?&quot;,&quot;completeLabel&quot;:&quot;Complete&quot;,&quot;completeMessage&quot;:&quot;Are you sure you want to complete the script?&quot;,&quot;instruction&quot;:&quot;&quot;,&quot;showPersistentComponent&quot;:[true,false],&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{},&quot;knowledgeOptions&quot;:{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;},&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;OR&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;CountConfirmPolicies&quot;},{&quot;field&quot;:&quot;CountConfirmOpptys&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;data&quot;:&quot;0&quot;}]}},&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;instructionKey&quot;:&quot;&quot;,&quot;chartLabel&quot;:null,&quot;allowSaveForLater&quot;:true,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GetLostBizAccountFromContext</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;GetLostBizAccountFromContext&quot;,&quot;integrationProcedureKey&quot;:&quot;Ins_GetLostBizAccountFromContext&quot;,&quot;useContinuation&quot;:false,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false},&quot;remoteTimeout&quot;:30000,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;extraPayload&quot;:{},&quot;inProgressMessage&quot;:&quot;In Progress&quot;,&quot;postMessage&quot;:&quot;Done&quot;,&quot;failureNextLabel&quot;:&quot;Continue&quot;,&quot;failureAbortLabel&quot;:&quot;Abort&quot;,&quot;failureGoBackLabel&quot;:&quot;Go Back&quot;,&quot;failureAbortMessage&quot;:&quot;Are you sure?&quot;,&quot;validationRequired&quot;:&quot;Step&quot;,&quot;redirectPageName&quot;:&quot;&quot;,&quot;redirectTemplateUrl&quot;:&quot;vlcAcknowledge.html&quot;,&quot;redirectNextLabel&quot;:&quot;Next&quot;,&quot;redirectNextWidth&quot;:3,&quot;redirectPreviousLabel&quot;:&quot;Previous&quot;,&quot;redirectPreviousWidth&quot;:3,&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;svgSprite&quot;:&quot;&quot;,&quot;svgIcon&quot;:&quot;&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;enableDefaultAbort&quot;:false,&quot;enableActionMessage&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsLostBizGetConfirmationData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;InsLostBizGetConfirmationData&quot;,&quot;integrationProcedureKey&quot;:&quot;Ins_LostBizGetConfirmationData&quot;,&quot;useContinuation&quot;:false,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false},&quot;remoteTimeout&quot;:30000,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;extraPayload&quot;:{&quot;AccountPolicies&quot;:&quot;%SelectLostPolicies:CustomLWC1:LostBizPolicyNode:selectedPolicies%&quot;,&quot;AccountOpptys&quot;:&quot;%SelectLostOpportunities:CustomLWC2:LostBizOpptyNode:selectedOpptys%&quot;},&quot;inProgressMessage&quot;:&quot;In Progress&quot;,&quot;postMessage&quot;:&quot;Done&quot;,&quot;failureNextLabel&quot;:&quot;Continue&quot;,&quot;failureAbortLabel&quot;:&quot;Abort&quot;,&quot;failureGoBackLabel&quot;:&quot;Go Back&quot;,&quot;failureAbortMessage&quot;:&quot;Are you sure?&quot;,&quot;validationRequired&quot;:&quot;Step&quot;,&quot;redirectPageName&quot;:&quot;&quot;,&quot;redirectTemplateUrl&quot;:&quot;vlcAcknowledge.html&quot;,&quot;redirectNextLabel&quot;:&quot;Next&quot;,&quot;redirectNextWidth&quot;:3,&quot;redirectPreviousLabel&quot;:&quot;Previous&quot;,&quot;redirectPreviousWidth&quot;:3,&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;svgSprite&quot;:&quot;&quot;,&quot;svgIcon&quot;:&quot;&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;enableDefaultAbort&quot;:false,&quot;enableActionMessage&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;,&quot;sendOnlyExtraPayload&quot;:true}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LostBizGetAccountOpportunities</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;LostBizGetAccountOpportunities&quot;,&quot;integrationProcedureKey&quot;:&quot;Ins_LostBizGetAccountOpportunities&quot;,&quot;useContinuation&quot;:false,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false},&quot;remoteTimeout&quot;:30000,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;extraPayload&quot;:{&quot;AccountId&quot;:&quot;%AccountId%&quot;},&quot;inProgressMessage&quot;:&quot;In Progress&quot;,&quot;postMessage&quot;:&quot;Done&quot;,&quot;failureNextLabel&quot;:&quot;Continue&quot;,&quot;failureAbortLabel&quot;:&quot;Abort&quot;,&quot;failureGoBackLabel&quot;:&quot;Go Back&quot;,&quot;failureAbortMessage&quot;:&quot;Are you sure?&quot;,&quot;validationRequired&quot;:&quot;Step&quot;,&quot;redirectPageName&quot;:&quot;&quot;,&quot;redirectTemplateUrl&quot;:&quot;vlcAcknowledge.html&quot;,&quot;redirectNextLabel&quot;:&quot;Next&quot;,&quot;redirectNextWidth&quot;:3,&quot;redirectPreviousLabel&quot;:&quot;Previous&quot;,&quot;redirectPreviousWidth&quot;:3,&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;svgSprite&quot;:&quot;&quot;,&quot;svgIcon&quot;:&quot;&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;enableDefaultAbort&quot;:false,&quot;enableActionMessage&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;,&quot;sendOnlyExtraPayload&quot;:true}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LostBizGetAccountPolicies</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;LostBizGetAccountPolicies&quot;,&quot;integrationProcedureKey&quot;:&quot;Ins_LostBizGetAccountPolicies&quot;,&quot;useContinuation&quot;:false,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;useFuture&quot;:false,&quot;chainable&quot;:false},&quot;remoteTimeout&quot;:30000,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;extraPayload&quot;:{&quot;recordId&quot;:&quot;%AccountId%&quot;},&quot;inProgressMessage&quot;:&quot;In Progress&quot;,&quot;postMessage&quot;:&quot;Done&quot;,&quot;failureNextLabel&quot;:&quot;Continue&quot;,&quot;failureAbortLabel&quot;:&quot;Abort&quot;,&quot;failureGoBackLabel&quot;:&quot;Go Back&quot;,&quot;failureAbortMessage&quot;:&quot;Are you sure?&quot;,&quot;validationRequired&quot;:&quot;Step&quot;,&quot;redirectPageName&quot;:&quot;&quot;,&quot;redirectTemplateUrl&quot;:&quot;vlcAcknowledge.html&quot;,&quot;redirectNextLabel&quot;:&quot;Next&quot;,&quot;redirectNextWidth&quot;:3,&quot;redirectPreviousLabel&quot;:&quot;Previous&quot;,&quot;redirectPreviousWidth&quot;:3,&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;svgSprite&quot;:&quot;&quot;,&quot;svgIcon&quot;:&quot;&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;enableDefaultAbort&quot;:false,&quot;enableActionMessage&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;,&quot;sendOnlyExtraPayload&quot;:true}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;CustomLWC2&quot;,&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;hide&quot;:false,&quot;lwcName&quot;:&quot;cfInsLostBizOpptyParent&quot;,&quot;bStandalone&quot;:true,&quot;customAttributes&quot;:[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%SelectOpptys%&quot;}]}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SelectLostOpportunities</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;label&quot;:&quot;Select Lost Opportunities&quot;,&quot;validationRequired&quot;:true,&quot;previousLabel&quot;:&quot;Previous&quot;,&quot;previousWidth&quot;:3,&quot;nextLabel&quot;:&quot;Next&quot;,&quot;nextWidth&quot;:3,&quot;cancelLabel&quot;:&quot;Cancel&quot;,&quot;cancelMessage&quot;:&quot;Are you sure?&quot;,&quot;saveLabel&quot;:&quot;Save for later&quot;,&quot;saveMessage&quot;:&quot;Are you sure you want to save it for later?&quot;,&quot;completeLabel&quot;:&quot;Complete&quot;,&quot;completeMessage&quot;:&quot;Are you sure you want to complete the script?&quot;,&quot;instruction&quot;:&quot;&quot;,&quot;showPersistentComponent&quot;:[true,false],&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{},&quot;knowledgeOptions&quot;:{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;},&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;&gt;&quot;,&quot;field&quot;:&quot;OpptyCount&quot;}]}},&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;instructionKey&quot;:&quot;&quot;,&quot;chartLabel&quot;:&quot;Select Lost Opportunities&quot;,&quot;allowSaveForLater&quot;:true,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;CustomLWC1&quot;,&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;hide&quot;:false,&quot;lwcName&quot;:&quot;cfInsLostBizPolicyParent&quot;,&quot;bStandalone&quot;:true,&quot;customAttributes&quot;:[{&quot;name&quot;:&quot;parent-data&quot;,&quot;source&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;records&quot;,&quot;source&quot;:&quot;%SelectLostPolicies%&quot;}]}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Formula1CountPolicies</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Formula1CountPolicies&quot;,&quot;showInputWidth&quot;:false,&quot;inputWidth&quot;:12,&quot;expression&quot;:&quot;COUNT(%SelectLostPolicies:CustomLWC1Parent:LostBizPolicyNode:selectedPolicies%)&quot;,&quot;hide&quot;:true,&quot;show&quot;:null,&quot;mask&quot;:null,&quot;dataType&quot;:null,&quot;hideGroupSep&quot;:false,&quot;dateFormat&quot;:&quot;MM-dd-yyyy&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Formula</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Formula2PremiumSum</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Formula2PremiumSum&quot;,&quot;showInputWidth&quot;:false,&quot;inputWidth&quot;:12,&quot;expression&quot;:&quot;SUM(%SelectLostPolicies:CustomLWC1Parent:LostBizPolicyNode:selectedPolicies:GrossWrittenPremium%)&quot;,&quot;hide&quot;:true,&quot;show&quot;:null,&quot;mask&quot;:null,&quot;dataType&quot;:null,&quot;hideGroupSep&quot;:false,&quot;dateFormat&quot;:&quot;MM-dd-yyyy&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Formula</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SelectLostPolicies</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;label&quot;:&quot;Select Lost Policies&quot;,&quot;validationRequired&quot;:true,&quot;previousLabel&quot;:&quot;Previous&quot;,&quot;previousWidth&quot;:3,&quot;nextLabel&quot;:&quot;Next&quot;,&quot;nextWidth&quot;:3,&quot;cancelLabel&quot;:&quot;Cancel&quot;,&quot;cancelMessage&quot;:&quot;Are you sure?&quot;,&quot;saveLabel&quot;:&quot;Save for later&quot;,&quot;saveMessage&quot;:&quot;Are you sure you want to save it for later?&quot;,&quot;completeLabel&quot;:&quot;Complete&quot;,&quot;completeMessage&quot;:&quot;Are you sure you want to complete the script?&quot;,&quot;instruction&quot;:&quot;&quot;,&quot;showPersistentComponent&quot;:[true,false],&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{},&quot;knowledgeOptions&quot;:{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;},&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;instructionKey&quot;:&quot;&quot;,&quot;chartLabel&quot;:&quot;Select Lost Policies&quot;,&quot;allowSaveForLater&quot;:true,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ShowOpptyStep</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;ShowOpptyStep&quot;,&quot;elementValueMap&quot;:{&quot;OpptyCount&quot;:&quot;=COUNT(%SelectOpptys:AccountOpptys%)&quot;},&quot;showPersistentComponent&quot;:[true,false],&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ContactWithClient</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Contact With Client&quot;,&quot;showInputWidth&quot;:false,&quot;inputWidth&quot;:12,&quot;required&quot;:false,&quot;repeat&quot;:false,&quot;repeatClone&quot;:false,&quot;repeatLimit&quot;:null,&quot;readOnly&quot;:false,&quot;defaultValue&quot;:null,&quot;help&quot;:false,&quot;helpText&quot;:&quot;&quot;,&quot;helpTextPos&quot;:&quot;&quot;,&quot;mask&quot;:&quot;&quot;,&quot;pattern&quot;:&quot;&quot;,&quot;ptrnErrText&quot;:&quot;&quot;,&quot;minLength&quot;:0,&quot;maxLength&quot;:255,&quot;placeholder&quot;:&quot;&quot;,&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;accessibleInFutureSteps&quot;:false,&quot;debounceValue&quot;:0,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;hide&quot;:false,&quot;disOnTplt&quot;:false,&quot;autocomplete&quot;:null}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LossDate</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Loss Date&quot;,&quot;showInputWidth&quot;:false,&quot;inputWidth&quot;:12,&quot;required&quot;:false,&quot;repeat&quot;:false,&quot;repeatClone&quot;:false,&quot;repeatLimit&quot;:null,&quot;readOnly&quot;:false,&quot;defaultValue&quot;:null,&quot;help&quot;:false,&quot;helpText&quot;:&quot;&quot;,&quot;helpTextPos&quot;:&quot;&quot;,&quot;dateType&quot;:&quot;string&quot;,&quot;modelDateFormat&quot;:&quot;yyyy-MM-dd&quot;,&quot;dateFormat&quot;:&quot;MM-dd-yyyy&quot;,&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;accessibleInFutureSteps&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;hide&quot;:false,&quot;disOnTplt&quot;:false,&quot;minDate&quot;:&quot;&quot;,&quot;maxDate&quot;:&quot;&quot;}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Date</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LossReason</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Loss Reason&quot;,&quot;showInputWidth&quot;:false,&quot;inputWidth&quot;:12,&quot;required&quot;:false,&quot;repeat&quot;:false,&quot;repeatClone&quot;:false,&quot;repeatLimit&quot;:null,&quot;readOnly&quot;:false,&quot;defaultValue&quot;:null,&quot;help&quot;:false,&quot;helpText&quot;:&quot;&quot;,&quot;helpTextPos&quot;:&quot;&quot;,&quot;options&quot;:[],&quot;optionSource&quot;:{&quot;type&quot;:&quot;SObject&quot;,&quot;source&quot;:&quot;InsurancePolicy.CancellationReasonType&quot;},&quot;controllingField&quot;:{&quot;element&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;},&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;accessibleInFutureSteps&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;hide&quot;:false,&quot;disOnTplt&quot;:false}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Select</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>StepEnterLossDetails</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;label&quot;:&quot;Enter Loss Details&quot;,&quot;validationRequired&quot;:true,&quot;previousLabel&quot;:&quot;Previous&quot;,&quot;previousWidth&quot;:3,&quot;nextLabel&quot;:&quot;Next&quot;,&quot;nextWidth&quot;:3,&quot;cancelLabel&quot;:&quot;Cancel&quot;,&quot;cancelMessage&quot;:&quot;Are you sure?&quot;,&quot;saveLabel&quot;:&quot;Save for later&quot;,&quot;saveMessage&quot;:&quot;Are you sure you want to save it for later?&quot;,&quot;completeLabel&quot;:&quot;Complete&quot;,&quot;completeMessage&quot;:&quot;Are you sure you want to complete the script?&quot;,&quot;instruction&quot;:&quot;&quot;,&quot;showPersistentComponent&quot;:[true,false],&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{},&quot;knowledgeOptions&quot;:{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;},&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;instructionKey&quot;:&quot;&quot;,&quot;chartLabel&quot;:null,&quot;allowSaveForLater&quot;:true,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>NavigateAccount</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:2,&quot;label&quot;:&quot;Finish&quot;,&quot;validationRequired&quot;:&quot;Submit&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;Account&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;ContextRecordType&quot;}]}},&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;pubsub&quot;:false,&quot;message&quot;:{},&quot;targetType&quot;:&quot;Record&quot;,&quot;objectAction&quot;:&quot;home&quot;,&quot;recordAction&quot;:&quot;view&quot;,&quot;loginAction&quot;:&quot;login&quot;,&quot;targetFilter&quot;:&quot;Recent&quot;,&quot;targetId&quot;:&quot;%ContextId%&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;&quot;,&quot;iconVariant&quot;:&quot;&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;replace&quot;:false,&quot;targetLWCLayout&quot;:&quot;lightning&quot;,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;,&quot;targetName&quot;:&quot;Account&quot;}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Navigate Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>NavigateAction3</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;targetName&quot;:&quot;InsurancePolicy&quot;,&quot;controlWidth&quot;:2,&quot;label&quot;:&quot;Finish&quot;,&quot;validationRequired&quot;:&quot;Submit&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;data&quot;:&quot;Policy&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;field&quot;:&quot;ContextRecordType&quot;}]}},&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;pubsub&quot;:false,&quot;message&quot;:{},&quot;targetType&quot;:&quot;Record&quot;,&quot;objectAction&quot;:&quot;home&quot;,&quot;recordAction&quot;:&quot;view&quot;,&quot;loginAction&quot;:&quot;login&quot;,&quot;targetFilter&quot;:&quot;Recent&quot;,&quot;targetId&quot;:&quot;%ContextId%&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;&quot;,&quot;iconVariant&quot;:&quot;&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;replace&quot;:false,&quot;targetLWCLayout&quot;:&quot;lightning&quot;,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Navigate Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>NavigateOppty</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;businessEvent&quot;:&quot;&quot;,&quot;businessCategory&quot;:&quot;&quot;,&quot;targetLWCLayout&quot;:&quot;lightning&quot;,&quot;replace&quot;:false,&quot;iconPosition&quot;:&quot;left&quot;,&quot;iconVariant&quot;:&quot;&quot;,&quot;iconName&quot;:&quot;&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;targetId&quot;:&quot;%ContextId%&quot;,&quot;targetFilter&quot;:&quot;Recent&quot;,&quot;loginAction&quot;:&quot;login&quot;,&quot;recordAction&quot;:&quot;view&quot;,&quot;objectAction&quot;:&quot;home&quot;,&quot;targetType&quot;:&quot;Record&quot;,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;ssm&quot;:false,&quot;wpm&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;ContextRecordType&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Opportunity&quot;}]}},&quot;validationRequired&quot;:&quot;Submit&quot;,&quot;label&quot;:&quot;Finish&quot;,&quot;controlWidth&quot;:2,&quot;targetName&quot;:&quot;Opportunity&quot;}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Navigate Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>NavigateTask</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;businessEvent&quot;:&quot;&quot;,&quot;businessCategory&quot;:&quot;&quot;,&quot;targetLWCLayout&quot;:&quot;lightning&quot;,&quot;replace&quot;:false,&quot;iconPosition&quot;:&quot;left&quot;,&quot;iconVariant&quot;:&quot;&quot;,&quot;iconName&quot;:&quot;&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;targetId&quot;:&quot;%ContextId%&quot;,&quot;targetFilter&quot;:&quot;Recent&quot;,&quot;loginAction&quot;:&quot;login&quot;,&quot;recordAction&quot;:&quot;view&quot;,&quot;objectAction&quot;:&quot;home&quot;,&quot;targetType&quot;:&quot;Record&quot;,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;ssm&quot;:false,&quot;wpm&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;show&quot;:{&quot;group&quot;:{&quot;operator&quot;:&quot;AND&quot;,&quot;rules&quot;:[{&quot;field&quot;:&quot;ContextRecordType&quot;,&quot;condition&quot;:&quot;=&quot;,&quot;data&quot;:&quot;Task&quot;}]}},&quot;validationRequired&quot;:&quot;Submit&quot;,&quot;label&quot;:&quot;Finish&quot;,&quot;controlWidth&quot;:2,&quot;targetName&quot;:&quot;Task&quot;}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Navigate Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TextBlock1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;TextBlock1&quot;,&quot;text&quot;:&quot;&lt;p&gt;Success. You Update is Complete!&lt;/p&gt;&quot;,&quot;show&quot;:null,&quot;dataJSON&quot;:false,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;textKey&quot;:&quot;&quot;,&quot;sanitize&quot;:false}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Wrapup</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{&quot;label&quot;:&quot;Wrapup&quot;,&quot;validationRequired&quot;:true,&quot;previousLabel&quot;:&quot;Previous&quot;,&quot;previousWidth&quot;:3,&quot;nextLabel&quot;:&quot;Next&quot;,&quot;nextWidth&quot;:3,&quot;cancelLabel&quot;:&quot;Cancel&quot;,&quot;cancelMessage&quot;:&quot;Are you sure?&quot;,&quot;saveLabel&quot;:&quot;Save for later&quot;,&quot;saveMessage&quot;:&quot;Are you sure you want to save it for later?&quot;,&quot;completeLabel&quot;:&quot;Complete&quot;,&quot;completeMessage&quot;:&quot;Are you sure you want to complete the script?&quot;,&quot;instruction&quot;:&quot;&quot;,&quot;showPersistentComponent&quot;:[true,false],&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{},&quot;knowledgeOptions&quot;:{&quot;language&quot;:&quot;English&quot;,&quot;publishStatus&quot;:&quot;Online&quot;,&quot;keyword&quot;:&quot;&quot;,&quot;dataCategoryCriteria&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;typeFilter&quot;:&quot;&quot;},&quot;show&quot;:null,&quot;conditionType&quot;:&quot;Hide if False&quot;,&quot;HTMLTemplateId&quot;:&quot;&quot;,&quot;instructionKey&quot;:&quot;&quot;,&quot;chartLabel&quot;:&quot;Wrapup&quot;,&quot;allowSaveForLater&quot;:true,&quot;errorMessage&quot;:{&quot;custom&quot;:[],&quot;default&quot;:null},&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;businessCategory&quot;:&quot;&quot;,&quot;businessEvent&quot;:&quot;&quot;}</propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:true,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:false,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:false,&quot;mergeSavedData&quot;:false,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:null,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;right&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;,&quot;currentLanguage&quot;:&quot;en_US&quot;}</propertySetConfig>
+    <subType>LostExistingBusiness</subType>
+    <type>Brokerforce</type>
+    <uniqueName>Brokerforce_LostExistingBusiness_English_4</uniqueName>
+    <versionNumber>4.0</versionNumber>
+    <webComponentKey>07b265b8-177e-90ef-b405-f54f2422806e</webComponentKey>
+</OmniScript>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+    &quot;ContextId&quot;: &quot;0YT5f000000AKGtGAO&quot;,
+    &quot;timeStamp&quot;: &quot;2022-01-27T22:29:33.919Z&quot;,
+    &quot;userProfile&quot;: &quot;*FINS - Internal - Admin&quot;,
+    &quot;userTimeZone&quot;: &quot;-480&quot;,
+    &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+    &quot;userName&quot;: &quot;michellelewis@michellelewis-20210819.demo&quot;,
+    &quot;userId&quot;: &quot;0055f000000IBlHAAW&quot;,
+    &quot;RenewalStatus&quot;: &quot;Bound&quot;,
+    &quot;Step2&quot;: {
+        &quot;CancellationDate&quot;: &quot;2022-01-28&quot;,
+        &quot;CancellationReason&quot;: &quot;Court &quot;,
+        &quot;CancellationReasonType&quot;: &quot;Court Release&quot;
+    }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLoadInsPolicyCancellation</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Cancelled</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8fa7b0a0-63ba-4758-a325-42690fcb0e8c</globalKey>
+        <inputFieldName>CancellationDetails:RenewalStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IA_Renewal_Status__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>c64ddbf2-1e6a-4311-aad4-b7b29b6e9678</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b16facf8-e789-4c00-98f3-a69fe45950eb</globalKey>
+        <inputFieldName>CancellationDetails:CancellationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CancellationDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2bd24672-01a4-4f5f-9d08-862e36776ebc</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1e2f9911-7b69-4d35-b2b3-bed58cca6bba</globalKey>
+        <inputFieldName>CancellationDetails:CancellationReason</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CancellationReason</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>614c4222-b3f7-4e95-861e-e2bb0e9d108b</globalKey>
+        <inputFieldName>CancellationDetails:CancellationReasonType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CancellationReasonType</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>f5c9d5b6-1301-4f51-86c4-9899d436133c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadInsPolicyCancellation</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+  &quot;timeStamp&quot;: &quot;2022-01-27T16:59:33.565Z&quot;,
+  &quot;userProfile&quot;: &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZone&quot;: &quot;-480&quot;,
+  &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+  &quot;userName&quot;: &quot;michellelewis@michellelewis-20210819.demo&quot;,
+  &quot;userId&quot;: &quot;0055f000000IBlHAAW&quot;,
+  &quot;RenewalStatus&quot;: &quot;Non-Renewed&quot;,
+  &quot;CancellationDetails&quot;: {
+    &quot;CancellationDate&quot;: &quot;2022-01-28&quot;,
+    &quot;CancellationReason&quot;: &quot;declined coverage&quot;,
+    &quot;CancellationReasonType&quot;: &quot;Duplicate Coverage&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLoadInsPolicyCancellation_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

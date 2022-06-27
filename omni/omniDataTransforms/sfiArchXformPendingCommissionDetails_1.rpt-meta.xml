@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+    &quot;BillCommissions&quot;: [
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 500,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 500,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ],
+                    &quot;EndDate&quot;: &quot;2022-12-01&quot;,
+                    &quot;EffectiveDate&quot;: &quot;2021-09-01&quot;,
+                    &quot;Name&quot;: &quot;Standard First Year Split&quot;
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+                &quot;PolicyName2&quot;: &quot;Group Medical&quot;,
+                &quot;PolicyName&quot;: &quot;MED 1234&quot;
+            },
+            &quot;Revenue&quot;: 500,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp1EAG&quot;
+        },
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 2500,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 2500,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ]
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f000000A5tHGAS&quot;,
+                &quot;PolicyName2&quot;: &quot;Medical HMO&quot;,
+                &quot;PolicyName&quot;: &quot;8749394&quot;
+            },
+            &quot;Revenue&quot;: 2500,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp2EAG&quot;
+        },
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 200,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 200,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ]
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f000000A5tcGAC&quot;,
+                &quot;PolicyName2&quot;: &quot;Medical PPO&quot;,
+                &quot;PolicyName&quot;: &quot;112233&quot;
+            },
+            &quot;Revenue&quot;: 200,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp3EAG&quot;
+        },
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 300,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 300,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ]
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f000000A5uCGAS&quot;,
+                &quot;PolicyName2&quot;: &quot;Medical HDHP&quot;,
+                &quot;PolicyName&quot;: &quot;096666&quot;
+            },
+            &quot;Revenue&quot;: 300,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp4EAG&quot;
+        }
+    ],
+    &quot;StatementDate&quot;: &quot;2021-09-01&quot;,
+    &quot;StatementName&quot;: &quot;Dean Test Commission Statement&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>sfiArchXformPendingCommissionDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>78ae4d10-a6e6-4aa1-b084-d9b11d9e3e16</globalKey>
+        <inputFieldName>BillCommissions:Policy:PolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>79852bb3-2fd9-4a53-be83-2864c77fd3d7</globalKey>
+        <inputFieldName>BillCommissions:Policy:PolicyName2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>af745ed9-950b-4490-a0d1-1614540e243b</globalKey>
+        <inputFieldName>BillCommissions:Policy:Splits:Payees:PayeeCommissionableRevenue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyCommissionable</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:BillCommissions:Policy:Splits:Payees:Percentage</formulaConverted>
+        <formulaExpression>BillCommissions:Policy:Splits:Payees:Percentage</formulaExpression>
+        <formulaResultPath>BillCommissions:Policy:Splits:Payees:varCommissionPercentage</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>8cae76f2-d15d-420f-957e-074fc4550442</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>30ce4c78-6f67-4d2d-8be3-3bb54a8b1322</globalKey>
+        <inputFieldName>BillCommissions:Policy:Splits:Payees:varCommissionPercentage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyPayeePercentage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>N/A</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4dffdc7b-d626-4211-af21-09f92917cc92</globalKey>
+        <inputFieldName>BillCommissions:Policy:Splits:Payees:CompanyPayee</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyCompanyPayee</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>N/A</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>590c4e61-fc7f-472d-b9f7-40a2f9a3c1eb</globalKey>
+        <inputFieldName>BillCommissions:Policy:Splits:Payees:ProducerName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyProducerPayee</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:BillCommissions:Policy:Splits:Payees:PayeeCommissionableRevenue var:BillCommissions:Policy:Splits:Payees:Percentage 100 / *</formulaConverted>
+        <formulaExpression>BillCommissions:Policy:Splits:Payees:PayeeCommissionableRevenue *  (BillCommissions:Policy:Splits:Payees:Percentage/100)</formulaExpression>
+        <formulaResultPath>BillCommissions:Policy:Splits:Payees:varCommissionAmount</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>15870940-1ceb-499f-98cd-e5d7124cbb23</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3d644976-b22a-496d-9d2c-45e992bee968</globalKey>
+        <inputFieldName>BillCommissions:Policy:Splits:Payees:varCommissionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionDetails:PolicyCommissionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f83d2aea-06bb-42a1-b0aa-bb0c02542ff5</globalKey>
+        <inputFieldName>StatementName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchXformPendingCommissionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StatementName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+    &quot;BillCommissions&quot;: [
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 500,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 500,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ],
+                    &quot;EndDate&quot;: &quot;2022-12-01&quot;,
+                    &quot;EffectiveDate&quot;: &quot;2021-09-01&quot;,
+                    &quot;Name&quot;: &quot;Standard First Year Split&quot;
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+                &quot;PolicyName2&quot;: &quot;Group Medical&quot;,
+                &quot;PolicyName&quot;: &quot;MED 1234&quot;
+            },
+            &quot;Revenue&quot;: 500,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp1EAG&quot;
+        },
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 2500,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 2500,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ]
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f000000A5tHGAS&quot;,
+                &quot;PolicyName2&quot;: &quot;Medical HMO&quot;,
+                &quot;PolicyName&quot;: &quot;8749394&quot;
+            },
+            &quot;Revenue&quot;: 2500,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp2EAG&quot;
+        },
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 200,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 200,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ]
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f000000A5tcGAC&quot;,
+                &quot;PolicyName2&quot;: &quot;Medical PPO&quot;,
+                &quot;PolicyName&quot;: &quot;112233&quot;
+            },
+            &quot;Revenue&quot;: 200,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp3EAG&quot;
+        },
+        {
+            &quot;Policy&quot;: {
+                &quot;Splits&quot;: {
+                    &quot;Payees&quot;: [
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 300,
+                            &quot;CompanyPayeeId&quot;: &quot;0015f00000DervEAAR&quot;,
+                            &quot;CompanyPayee&quot;: &quot;Premier Insurance Brokers&quot;,
+                            &quot;Percentage&quot;: 50
+                        },
+                        {
+                            &quot;PayeeCommissionableRevenue&quot;: 300,
+                            &quot;ProducerId&quot;: &quot;0Yx5f0000008TghCAE&quot;,
+                            &quot;ProducerName&quot;: &quot;Jane Austin&quot;,
+                            &quot;Percentage&quot;: 50
+                        }
+                    ]
+                },
+                &quot;PolicyId&quot;: &quot;0YT5f000000A5uCGAS&quot;,
+                &quot;PolicyName2&quot;: &quot;Medical HDHP&quot;,
+                &quot;PolicyName&quot;: &quot;096666&quot;
+            },
+            &quot;Revenue&quot;: 300,
+            &quot;CommissionsId&quot;: &quot;a1W5f000001BZp4EAG&quot;
+        }
+    ],
+    &quot;StatementDate&quot;: &quot;2021-09-01&quot;,
+    &quot;StatementName&quot;: &quot;Dean Test Commission Statement&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>sfiArchXformPendingCommissionDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

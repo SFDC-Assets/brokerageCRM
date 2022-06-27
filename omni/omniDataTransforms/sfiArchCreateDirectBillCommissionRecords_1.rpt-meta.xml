@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+    &quot;ContextId&quot;: &quot;aJD5f00000000sOGAQ&quot;,
+    &quot;timeStamp&quot;: &quot;2022-01-20T17:18:50.443Z&quot;,
+    &quot;userProfile&quot;: &quot;*FINS - Internal - Admin&quot;,
+    &quot;userTimeZone&quot;: &quot;-480&quot;,
+    &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+    &quot;userName&quot;: &quot;michellelewis@michellelewis-20210819.demo&quot;,
+    &quot;userId&quot;: &quot;0055f000000IBlHAAW&quot;,
+    &quot;StepCarrierRange&quot;: {
+        &quot;CurrentCommissionAmount&quot;: 100,
+        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+        &quot;SelectedCarrier&quot;: &quot;Aetna&quot;,
+        &quot;CommissionStatementTotal&quot;: 400
+    },
+    &quot;StepDisplayArrayofPolicies&quot;: {
+        &quot;CustomLWC1&quot;: {
+            &quot;cardRecordsParent&quot;: {
+                &quot;cardRecords&quot;: [
+                    {
+                        &quot;Id&quot;: &quot;REC0&quot;,
+                        &quot;RevenueAmount&quot;: &quot;23&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUlEAAU&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Alpine Media&quot;,
+                        &quot;PolicyName&quot;: &quot;Group Medical&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+                        &quot;PolicyNumber&quot;: &quot;MED 1234&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC0&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC0&quot;,
+                            &quot;state0element4&quot;: true,
+                            &quot;state0element4_child&quot;: true,
+                            &quot;state0element5&quot;: true,
+                            &quot;state0element5_child&quot;: true
+                        },
+                        &quot;selectionField&quot;: &quot;true&quot;
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC1&quot;,
+                        &quot;RevenueAmount&quot;: &quot;23&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUgaAAE&quot;,
+                        &quot;NameInsuredName&quot;: &quot;*Apple Ford Inc.&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f0000008x6UGAQ&quot;,
+                        &quot;PolicyNumber&quot;: &quot;GH-223344&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC1&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC1&quot;,
+                            &quot;state0element4&quot;: true,
+                            &quot;state0element4_child&quot;: true,
+                            &quot;state0element5&quot;: true,
+                            &quot;state0element5_child&quot;: true
+                        },
+                        &quot;selectionField&quot;: &quot;true&quot;
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC2&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUBqAAM&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Corabio&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical HDHP&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5sSGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;CO-988767&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC2&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC2&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC3&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUCJAA2&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Employnet&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical HMO&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5tHGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;8749394&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC3&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC3&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC4&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUCJAA2&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Employnet&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5tIGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;87977&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC4&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC4&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC5&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUC4AAM&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Missoula &amp; Sons Inc.&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5tcGAC&quot;,
+                        &quot;PolicyNumber&quot;: &quot;112233&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC5&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC5&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC6&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUCEAA2&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Open Source Inc.&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical HDHP&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5uCGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;096666&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC6&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC6&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC7&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUCEAA2&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Open Source Inc.&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical HMO&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5uDGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;999888&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC7&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC7&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC8&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUCEAA2&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Open Source Inc.&quot;,
+                        &quot;PolicyName&quot;: &quot;STD&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5uHGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;55554455&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC8&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC8&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    },
+                    {
+                        &quot;Id&quot;: &quot;REC9&quot;,
+                        &quot;RevenueAmount&quot;: &quot;0&quot;,
+                        &quot;NameInsuredId&quot;: &quot;0015f000003bUBRAA2&quot;,
+                        &quot;NameInsuredName&quot;: &quot;Red Studio Designs&quot;,
+                        &quot;PolicyName&quot;: &quot;Medical HMO&quot;,
+                        &quot;PolicyId&quot;: &quot;0YT5f000000A5uPGAS&quot;,
+                        &quot;PolicyNumber&quot;: &quot;XR9987&quot;,
+                        &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+                        &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+                        &quot;uniqueKey&quot;: &quot;REC9&quot;,
+                        &quot;_flex&quot;: {
+                            &quot;uniqueKey&quot;: &quot;REC9&quot;,
+                            &quot;state0element4&quot;: false,
+                            &quot;state0element4_child&quot;: false,
+                            &quot;state0element5&quot;: false,
+                            &quot;state0element5_child&quot;: false
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    &quot;filteredList&quot;: [
+        {
+            &quot;Id&quot;: &quot;REC0&quot;,
+            &quot;RevenueAmount&quot;: &quot;23&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUlEAAU&quot;,
+            &quot;NameInsuredName&quot;: &quot;Alpine Media&quot;,
+            &quot;PolicyName&quot;: &quot;Group Medical&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+            &quot;PolicyNumber&quot;: &quot;MED 1234&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC0&quot;,
+            &quot;_flex&quot;: {
+                &quot;uniqueKey&quot;: &quot;REC0&quot;,
+                &quot;state0element4&quot;: true,
+                &quot;state0element4_child&quot;: true,
+                &quot;state0element5&quot;: true,
+                &quot;state0element5_child&quot;: true
+            },
+            &quot;selectionField&quot;: &quot;true&quot;
+        },
+        {
+            &quot;Id&quot;: &quot;REC1&quot;,
+            &quot;RevenueAmount&quot;: &quot;23&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUgaAAE&quot;,
+            &quot;NameInsuredName&quot;: &quot;*Apple Ford Inc.&quot;,
+            &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f0000008x6UGAQ&quot;,
+            &quot;PolicyNumber&quot;: &quot;GH-223344&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC1&quot;,
+            &quot;_flex&quot;: {
+                &quot;uniqueKey&quot;: &quot;REC1&quot;,
+                &quot;state0element4&quot;: true,
+                &quot;state0element4_child&quot;: true,
+                &quot;state0element5&quot;: true,
+                &quot;state0element5_child&quot;: true
+            },
+            &quot;selectionField&quot;: &quot;true&quot;
+        }
+    ],
+    &quot;DRId_omnistudio_fsc__CommissionStatement__c&quot;: &quot;aJD5f00000000sOGAQ&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>sfiArchCreateDirectBillCommissionRecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>749133db-69e2-45f4-8d61-a38af80605f0</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Commission_Statement__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>72cac659-5caa-4961-9316-3ba0464942b9</globalKey>
+        <inputFieldName>StepCarrierRange:CommissionStatementTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Statement_Total__c</outputFieldName>
+        <outputObjectName>Commission_Statement__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4eb0adce-6c18-4929-9980-32a263fc0faf</globalKey>
+        <inputFieldName>varTotalCommission</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>TotalCommissionAmount__c</outputFieldName>
+        <outputObjectName>Commission_Statement__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:StepCarrierRange:CurrentCommissionAmount | var:filteredList:RevenueAmount SUM +</formulaConverted>
+        <formulaExpression>StepCarrierRange:CurrentCommissionAmount + SUM(filteredList:RevenueAmount)</formulaExpression>
+        <formulaResultPath>varTotalCommission</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>ef272c40-a15c-4a10-93cd-430ca9f46008</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:varMonth &quot;1&quot; = &apos;Jan&apos; | var:varMonth &quot;2&quot; = &apos;Feb&apos; | var:varMonth &quot;3&quot; = &apos;Mar&apos; | var:varMonth &quot;4&quot; = &apos;Apr&apos; | var:varMonth &quot;5&quot; = &apos;May&apos; | var:varMonth &quot;6&quot; = &apos;Jun&apos; | var:varMonth &quot;7&quot; = &apos;Jul&apos; | var:varMonth &quot;8&quot; = &apos;Aug&apos; | var:varMonth &quot;9&quot; = &apos;Sep&apos; | var:varMonth &quot;10&quot; = &apos;Oct&apos; | var:varMonth &quot;11&quot; = &apos;Nov&apos; &apos;Dec&apos; IF IF IF IF IF IF IF IF IF IF IF</formulaConverted>
+        <formulaExpression>IF(varMonth=&quot;1&quot;,&apos;Jan&apos;,IF(varMonth=&quot;2&quot;,&apos;Feb&apos;,IF(varMonth=&quot;3&quot;,&apos;Mar&apos;,IF(varMonth=&quot;4&quot;,&apos;Apr&apos;,IF(varMonth=&quot;5&quot;,&apos;May&apos;,IF(varMonth=&quot;6&quot;,&apos;Jun&apos;,IF(varMonth=&quot;7&quot;,&apos;Jul&apos;,IF(varMonth=&quot;8&quot;,&apos;Aug&apos;,IF(varMonth=&quot;9&quot;,&apos;Sep&apos;,IF(varMonth=&quot;10&quot;,&apos;Oct&apos;,IF(varMonth=&quot;11&quot;,&apos;Nov&apos;,&apos;Dec&apos;)))))))))))</formulaExpression>
+        <formulaResultPath>varAlphaMonth</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>7735989f-0e23-4083-aa6f-0da1cd44c9d2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:StepCarrierRange:EffectiveDate MONTH</formulaConverted>
+        <formulaExpression>MONTH(StepCarrierRange:EffectiveDate)</formulaExpression>
+        <formulaResultPath>varMonth</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>d4d46e32-f80a-4693-8a8a-39baee50154e</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>4ca3a4b9-9480-4ac4-b48b-ddd9bdb47a3a</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0e43f73f-8a71-4fba-9c34-9e9216faa9e8</globalKey>
+        <inputFieldName>filteredList:varDirectBillRecordName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:filteredList:NameInsuredName &quot;/\/\/&quot; var:varAlphaMonth CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(filteredList:NameInsuredName,&quot; &quot;,varAlphaMonth)</formulaExpression>
+        <formulaResultPath>filteredList:varDirectBillRecordName</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>fe1eb279-9676-4a25-b00b-8970e3d99a4d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>38a5b018-7e59-413f-b438-f6267589f73c</globalKey>
+        <inputFieldName>StepCarrierRange:CommissionStatementDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Apply_to_Month__c</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>38eb7f71-7cc9-46b8-8c0a-720f14d6e4b3</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Commission_Statement2__c</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>128e5488-1e87-46d2-9122-9564f2e0c26c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Commission_Statement__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0fed2350-e9da-4e59-8140-904f1eec9518</globalKey>
+        <inputFieldName>filteredList:PolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Insurance_Policy__c</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Commission</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6e62d4ec-e422-4a48-bb7f-be4938f29258</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Revenue_Type__c</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>daea855f-d396-4cce-a75b-f80c473b9db7</globalKey>
+        <inputFieldName>filteredList:RevenueAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>sfiArchCreateDirectBillCommissionRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Revenue__c</outputFieldName>
+        <outputObjectName>Direct_Bill_Commission__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot;: &quot;aJD5f00000000sOGAQ&quot;,
+  &quot;timeStamp&quot;: &quot;2022-01-20T17:18:50.443Z&quot;,
+  &quot;userProfile&quot;: &quot;*FINS - Internal - Admin&quot;,
+  &quot;userTimeZone&quot;: &quot;-480&quot;,
+  &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+  &quot;userName&quot;: &quot;michellelewis@michellelewis-20210819.demo&quot;,
+  &quot;userId&quot;: &quot;0055f000000IBlHAAW&quot;,
+  &quot;StepCarrierRange&quot;: {
+    &quot;CurrentCommissionAmount&quot;: 100,
+    &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+    &quot;SelectedCarrier&quot;: &quot;Aetna&quot;,
+    &quot;CommissionStatementTotal&quot;: 400
+  },
+  &quot;StepDisplayArrayofPolicies&quot;: {
+    &quot;CustomLWC1&quot;: {
+      &quot;cardRecordsParent&quot;: {
+        &quot;cardRecords&quot;: [
+          {
+            &quot;Id&quot;: &quot;REC0&quot;,
+            &quot;RevenueAmount&quot;: &quot;23&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUlEAAU&quot;,
+            &quot;NameInsuredName&quot;: &quot;Alpine Media&quot;,
+            &quot;PolicyName&quot;: &quot;Group Medical&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+            &quot;PolicyNumber&quot;: &quot;MED 1234&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC0&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC0&quot;,
+              &quot;state0element4&quot;: true,
+              &quot;state0element4_child&quot;: true,
+              &quot;state0element5&quot;: true,
+              &quot;state0element5_child&quot;: true
+            },
+            &quot;selectionField&quot;: &quot;true&quot;
+          },
+          {
+            &quot;Id&quot;: &quot;REC1&quot;,
+            &quot;RevenueAmount&quot;: &quot;23&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUgaAAE&quot;,
+            &quot;NameInsuredName&quot;: &quot;*Apple Ford Inc.&quot;,
+            &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f0000008x6UGAQ&quot;,
+            &quot;PolicyNumber&quot;: &quot;GH-223344&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC1&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC1&quot;,
+              &quot;state0element4&quot;: true,
+              &quot;state0element4_child&quot;: true,
+              &quot;state0element5&quot;: true,
+              &quot;state0element5_child&quot;: true
+            },
+            &quot;selectionField&quot;: &quot;true&quot;
+          },
+          {
+            &quot;Id&quot;: &quot;REC2&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUBqAAM&quot;,
+            &quot;NameInsuredName&quot;: &quot;Corabio&quot;,
+            &quot;PolicyName&quot;: &quot;Medical HDHP&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5sSGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;CO-988767&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC2&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC2&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC3&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUCJAA2&quot;,
+            &quot;NameInsuredName&quot;: &quot;Employnet&quot;,
+            &quot;PolicyName&quot;: &quot;Medical HMO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5tHGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;8749394&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC3&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC3&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC4&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUCJAA2&quot;,
+            &quot;NameInsuredName&quot;: &quot;Employnet&quot;,
+            &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5tIGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;87977&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC4&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC4&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC5&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUC4AAM&quot;,
+            &quot;NameInsuredName&quot;: &quot;Missoula &amp; Sons Inc.&quot;,
+            &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5tcGAC&quot;,
+            &quot;PolicyNumber&quot;: &quot;112233&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC5&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC5&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC6&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUCEAA2&quot;,
+            &quot;NameInsuredName&quot;: &quot;Open Source Inc.&quot;,
+            &quot;PolicyName&quot;: &quot;Medical HDHP&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5uCGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;096666&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC6&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC6&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC7&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUCEAA2&quot;,
+            &quot;NameInsuredName&quot;: &quot;Open Source Inc.&quot;,
+            &quot;PolicyName&quot;: &quot;Medical HMO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5uDGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;999888&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC7&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC7&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC8&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUCEAA2&quot;,
+            &quot;NameInsuredName&quot;: &quot;Open Source Inc.&quot;,
+            &quot;PolicyName&quot;: &quot;STD&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5uHGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;55554455&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC8&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC8&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          },
+          {
+            &quot;Id&quot;: &quot;REC9&quot;,
+            &quot;RevenueAmount&quot;: &quot;0&quot;,
+            &quot;NameInsuredId&quot;: &quot;0015f000003bUBRAA2&quot;,
+            &quot;NameInsuredName&quot;: &quot;Red Studio Designs&quot;,
+            &quot;PolicyName&quot;: &quot;Medical HMO&quot;,
+            &quot;PolicyId&quot;: &quot;0YT5f000000A5uPGAS&quot;,
+            &quot;PolicyNumber&quot;: &quot;XR9987&quot;,
+            &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+            &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+            &quot;uniqueKey&quot;: &quot;REC9&quot;,
+            &quot;_flex&quot;: {
+              &quot;uniqueKey&quot;: &quot;REC9&quot;,
+              &quot;state0element4&quot;: false,
+              &quot;state0element4_child&quot;: false,
+              &quot;state0element5&quot;: false,
+              &quot;state0element5_child&quot;: false
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;filteredList&quot;: [
+    {
+      &quot;Id&quot;: &quot;REC0&quot;,
+      &quot;RevenueAmount&quot;: &quot;23&quot;,
+      &quot;NameInsuredId&quot;: &quot;0015f000003bUlEAAU&quot;,
+      &quot;NameInsuredName&quot;: &quot;Alpine Media&quot;,
+      &quot;PolicyName&quot;: &quot;Group Medical&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5f0000008uloGAA&quot;,
+      &quot;PolicyNumber&quot;: &quot;MED 1234&quot;,
+      &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+      &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+      &quot;uniqueKey&quot;: &quot;REC0&quot;,
+      &quot;_flex&quot;: {
+        &quot;uniqueKey&quot;: &quot;REC0&quot;,
+        &quot;state0element4&quot;: true,
+        &quot;state0element4_child&quot;: true,
+        &quot;state0element5&quot;: true,
+        &quot;state0element5_child&quot;: true
+      },
+      &quot;selectionField&quot;: &quot;true&quot;
+    },
+    {
+      &quot;Id&quot;: &quot;REC1&quot;,
+      &quot;RevenueAmount&quot;: &quot;23&quot;,
+      &quot;NameInsuredId&quot;: &quot;0015f000003bUgaAAE&quot;,
+      &quot;NameInsuredName&quot;: &quot;*Apple Ford Inc.&quot;,
+      &quot;PolicyName&quot;: &quot;Medical PPO&quot;,
+      &quot;PolicyId&quot;: &quot;0YT5f0000008x6UGAQ&quot;,
+      &quot;PolicyNumber&quot;: &quot;GH-223344&quot;,
+      &quot;AccountId&quot;: &quot;0015f000005EFVhAAO&quot;,
+      &quot;EffectiveDate&quot;: &quot;2021-12-01&quot;,
+      &quot;uniqueKey&quot;: &quot;REC1&quot;,
+      &quot;_flex&quot;: {
+        &quot;uniqueKey&quot;: &quot;REC1&quot;,
+        &quot;state0element4&quot;: true,
+        &quot;state0element4_child&quot;: true,
+        &quot;state0element5&quot;: true,
+        &quot;state0element5_child&quot;: true
+      },
+      &quot;selectionField&quot;: &quot;true&quot;
+    }
+  ],
+  &quot;DRId_omnistudio_fsc__CommissionStatement__c&quot;: &quot;aJD5f00000000sOGAQ&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>sfiArchCreateDirectBillCommissionRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
